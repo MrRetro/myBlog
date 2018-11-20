@@ -1,27 +1,23 @@
-# my-blog2
+# 我的博客
 
-> A Vue.js project
+### 此项目主要用于学习使用(请勿商用，谢谢)
 
-## Build Setup
+作为一名程序员，一开始都得有自己的个人博客吧，那就开始撸代码吧。不，在开始撸代码之前一定要先捋清楚思路，
+不然怎么动手。   
+## 项目环境
+- node
+- koa2
+- vue
+- mysql
+- typescript (这个很多源码都使用，必备技术)
 
-``` bash
-# install dependencies
-npm install
+### 一个网站它到底是怎么形成的呢？
+大概的思路:   
+首先我们平时看到的网站正常都是包括前端页面，和后端数据组成。
+我们可以通过vue写网页页面，koa2来链接数据库mysql作为页面
+和数据的桥梁，在写代码的时候我们要用严格语法typescript来
+写javascript,这都跑在node这个环境上面。
 
-# serve with hot reload at localhost:8080
-npm run dev
+### 如果有什么问题或想学习什么可以在issure提哦。
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### 以上内容如果有错误，请各位指出，不要让作者在这勿人子弟，十分感谢！
