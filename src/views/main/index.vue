@@ -3,7 +3,9 @@
     {{data}}
   </div>
 </template>
+
 <script lang="ts">
+// eslint-disable-next-line
 import Vue from 'vue'
 import Component from 'vue-class-component'
 import Axios from 'axios'
