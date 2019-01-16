@@ -43,7 +43,7 @@ import Component from 'vue-class-component'
 })
 export default class bookList extends Vue {
   handleClick (item:any) {
-    alert(item.name)
+    this.$emit('event-change', item.id, item.name)
   }
 }
 </script>

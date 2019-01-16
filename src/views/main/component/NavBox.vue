@@ -1,7 +1,14 @@
 <template>
   <ul class="nav-box">
-    <li class="li-item" v-for="(item,i) in data" :key="i">
+    <li
+      class="li-item"
+      :class="{'cur':selectIndex === i}"
+      v-for="(item,i) in data"
+      :key="i"
+      @click="handleSelectNav(i)"
+    >
       {{item.name}}
+      <span class="border"></span>
     </li>
   </ul>
 </template>
@@ -23,7 +30,12 @@ import Component from 'vue-class-component'
     }
   })
 export default class NavBox extends Vue {
+    selectIndex: Number = -1
 
+    // 选中导航菜单项
+    handleSelectNav (index:Number) {
+      this.selectIndex = index
+    }
   }
 </script>
 
@@ -37,6 +49,7 @@ export default class NavBox extends Vue {
   margin-bottom: 50px;
 }
 .nav-box .li-item{
+  position: relative;
   float: left;
   width: 25%;
   line-height: 80px;
@@ -45,5 +58,30 @@ export default class NavBox extends Vue {
   font-weight: bold;
   cursor: pointer;
   letter-spacing: 1.5px;
+  transition: color .3s linear;
+}
+.nav-box .li-item .border{
+  position: absolute;
+  left:100%;
+  right:100%;
+  bottom: 0px;
+  height: 5px;
+  background-color: #ECAD9E;
+  transition: left .3s linear,right .3s linear;
+}
+.nav-box .li-item:nth-child(1) .border{
+  left: 20%;
+}
+.nav-box .li-item:last-child .border{
+  right: 20%;
+}
+.nav-box .li-item:hover,
+.nav-box .li-item.cur{
+  color: #F4606C;
+}
+.nav-box .li-item:hover .border,
+.nav-box .li-item.cur .border{
+  left: 20%;
+  right: 20%;
 }
 </style>

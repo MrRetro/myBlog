@@ -12,6 +12,7 @@
         :bookTop="20"
         :data="row1column1"
         bookType="row1-column1"
+        @event-change="onChange"
       />
       <!--第一行第二列-->
       <book-list
@@ -387,6 +388,10 @@ export default class bookcase extends Vue {
     {id: '10000', name: '世界'},
     {id: '10000', name: '世界'}
   ]
+
+  onChange (id: String, name: String) {
+    this.$emit('event-change', id, name)
+  }
 }
 </script>
 

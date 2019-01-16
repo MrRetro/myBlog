@@ -9,13 +9,16 @@
       </div>
       <div class="right-box" slot="right">
         <nav-box />
-        <bookcase />
+        <bookcase @event-change="onChangeArticle" />
       </div>
     </container>
     <page-explain
       :data="pageTail"
       :isTail="true"
     />
+    <modal :isShow="isModal" @event-change="onChangeModal">
+      <div>我是弹框</div>
+    </modal>
   </div>
 </template>
 
@@ -29,6 +32,7 @@ import Container from './component/Container.vue'
 import Calendar from './component/Calendar.vue'
 import NavBox from './component/NavBox.vue'
 import Bookcase from './component/Bookcase.vue'
+import Modal from './component/Modal.vue'
 import Axios from 'axios'
 // @Component 修饰符注明了此类为一个 Vue 组件
 
@@ -39,16 +43,27 @@ import Axios from 'axios'
     Container,
     Calendar,
     NavBox,
-    Bookcase
+    Bookcase,
+    Modal
   }
 })
 export default class main extends Vue {
   data: Object = []
 
+  // 弹框显示
+  isModal:Boolean = false
+
   // 页尾
   date:Date = new Date();
   pageTail: String = `Retro Mr.${this.date.getFullYear()} 厦门程序猿 - New Piece  版权所有 闽ICP 18019448`
 
+  onChangeArticle (id: String, name:String) {
+    this.isModal = true
+    console.log('文章id==>', id, name)
+  }
+  onChangeModal (status:Boolean) {
+    this.isModal = status
+  }
   beforeCreate () {
     console.log('beforeCreate')
   }
