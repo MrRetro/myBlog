@@ -17,11 +17,11 @@
       :isTail="true"
     />
     <modal :isShow="isModal" @event-change="onChangeModal">
-      <!--<iframe src="http://www.2tro.com/art.aspx"-->
-              <!--frameborder="0"-->
-              <!--style="position: absolute;left: 0px;width: 100%;height: 1000px;overflow-y: auto;">-->
+      <iframe src="http://www.2tro.com/art.aspx"
+              frameborder="0"
+              style="position: absolute;left: 0px;width: 100%;height: 1000px;overflow-y: auto;">
 
-      <!--</iframe>-->
+      </iframe>
     </modal>
   </div>
 </template>
