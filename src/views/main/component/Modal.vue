@@ -1,7 +1,9 @@
 <template>
-  <div class="modal-box" :class="{'cur':show}">
+  <div class="modal-box" :class="{'cur':show}" @scroll.prevent>
     <div class="modal-content">
-      <div class="close" @click="closeModal">x</div>
+      <div class="close">
+        <span class="word-close" @click="closeModal">x</span>
+      </div>
       <slot />
     </div>
   </div>
@@ -33,30 +35,11 @@ export default {
     }
   }
 }
-// import Vue from 'vue'
-// import Component from 'vue-class-component'
-//   @Component({
-//     props: {
-//       isShow: {
-//         type: Boolean,
-//         default: false
-//       }
-//     }
-//   })
-// export default class Modal extends Vue {
-//   show: Boolean = false
-//   set isShow (vl:Boolean) {
-//     this.show = vl
-//   }
-//   closeModal () {
-//     this.show = false
-//   }
-//   }
 </script>
 
 <style scoped>
 .modal-box {
-  position: absolute;
+  position: fixed;
   top: 0px;
   bottom: 0px;
   left: 10%;
@@ -70,7 +53,8 @@ export default {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  background-color: white;
+  background-color: rgba(0,0,0,.9);
+  overflow-y: auto;
 }
 .modal-box.cur,
 .modal-box.cur .modal-content {
@@ -82,6 +66,16 @@ export default {
   opacity: 1;
 }
 .modal-box .close{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  text-align: right;
+  z-index: 99998;
+}
+.modal-box .close .word-close{
   cursor: pointer;
+  font-size: 46px;
+  color: rgba(255,255,255,0.8);
+  padding: 30px;
 }
 </style>

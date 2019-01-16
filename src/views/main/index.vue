@@ -17,7 +17,11 @@
       :isTail="true"
     />
     <modal :isShow="isModal" @event-change="onChangeModal">
-      <div>我是弹框</div>
+      <iframe src="http://www.2tro.com/art.aspx"
+              frameborder="0"
+              style="position: absolute;left: 0px;width: 100%;height: 1000px;overflow-y: auto;">
+
+      </iframe>
     </modal>
   </div>
 </template>

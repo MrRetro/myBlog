@@ -25,6 +25,7 @@
         :bookTop="15"
         :data="row1column2"
         bookType="row1-column2"
+        @event-change="onChange"
       />
       <!--第二行第一列-->
       <book-list
@@ -37,6 +38,7 @@
         :bookTop="21"
         :data="row2column1"
         bookType="row2-column1"
+        @event-change="onChange"
       />
       <!--第二行第二列-->
       <book-list
@@ -49,6 +51,7 @@
         :data="row2column2"
         :bookTop="21"
         bookType="row2-column2"
+        @event-change="onChange"
       />
       <!--第三行第一列-->
       <book-list
@@ -61,6 +64,7 @@
         :data="row3column1"
         :bookTop="21"
         bookType="row3-column1"
+        @event-change="onChange"
       />
       <!--第三行第二列-->
       <book-list
@@ -73,6 +77,7 @@
         :data="row3column2"
         :bookTop="21"
         bookType="row3-column2"
+        @event-change="onChange"
       />
       <!--第四行第一列-->
       <book-list
@@ -85,6 +90,7 @@
         :data="row4column1"
         :bookTop="24"
         bookType="row4-column1"
+        @event-change="onChange"
       />
       <!--第四行第二列-->
       <book-list
@@ -97,6 +103,7 @@
         :data="row4column2"
         :bookTop="24"
         bookType="row4-column2"
+        @event-change="onChange"
       />
       <!--第五行第一列-->
       <book-list
@@ -109,6 +116,7 @@
         :data="row5column1"
         :bookTop="32"
         bookType="row5-column1"
+        @event-change="onChange"
       />
       <!--第五行第二列-->
       <book-list
@@ -121,6 +129,7 @@
         :data="row5column2"
         :bookTop="32"
         bookType="row5-column2"
+        @event-change="onChange"
       />
       <!--第六行第一列-->
       <book-list
@@ -133,6 +142,7 @@
         :data="row6column1"
         :bookTop="32"
         bookType="row6-column1"
+        @event-change="onChange"
       />
       <!--第六行第二列-->
       <book-list
@@ -145,6 +155,7 @@
         :data="row6column2"
         :bookTop="32"
         bookType="row6-column2"
+        @event-change="onChange"
       />
     </div>
   </div>
