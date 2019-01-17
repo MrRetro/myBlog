@@ -26,7 +26,7 @@ export default class EditDiv extends Vue {
     }
   }
 </script>
-<style>
+<style scoped>
   #div{
     line-height: 300px;
   }

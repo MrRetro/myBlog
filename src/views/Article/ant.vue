@@ -11,7 +11,7 @@ import Component from 'vue-class-component'
 export default class EditDiv extends Vue {
   }
 </script>
-<style>
+<style scoped>
   @keyframes ants {
     to { background-position:100% }
   }

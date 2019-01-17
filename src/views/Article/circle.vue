@@ -12,7 +12,7 @@ import Component from 'vue-class-component'
 export default class EditDiv extends Vue {
   }
 </script>
-<style>
+<style scoped>
   .circle{
     padding: 200px;
   }
