@@ -170,24 +170,24 @@ import BookList from './BookList.vue'
 })
 export default class bookcase extends Vue {
   row1column1:any =[
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'},
-    {id: '10000', name: 'css世界之窗'}
+    {id: '10001', name: '可编辑', href: 'edit'},
+    {id: '10002', name: '重叠框', href: 'border'},
+    {id: '10003', name: '蚂蚁线', href: 'ant'},
+    {id: '10004', name: '画个圆', href: 'circle'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'},
+    {id: '10000', name: '大世界'}
   ]
   row1column2:any =[
     {id: '10000', name: '大世界'},
@@ -400,8 +400,8 @@ export default class bookcase extends Vue {
     {id: '10000', name: '世界'}
   ]
 
-  onChange (id: String, name: String) {
-    this.$emit('event-change', id, name)
+  onChange (id: String, name: String, href: String) {
+    this.$emit('event-change', id, name, href)
   }
 }
 </script>

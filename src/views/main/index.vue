@@ -17,7 +17,7 @@
       :isTail="true"
     />
     <modal :isShow="isModal" @event-change="onChangeModal">
-      <iframe src="http://www.2tro.com/art.aspx"
+      <iframe id="content" :src="src"
               frameborder="0"
               style="position: absolute;left: 0px;width: 100%;height: 1000px;overflow-y: auto;">
 
@@ -53,6 +53,7 @@ import Axios from 'axios'
 })
 export default class main extends Vue {
   data: Object = []
+  src: String='http://www.2tro.com/art.aspx'
 
   // 弹框显示
   isModal:Boolean = false
@@ -61,9 +62,16 @@ export default class main extends Vue {
   date:Date = new Date();
   pageTail: String = `Retro Mr.${this.date.getFullYear()} 厦门程序猿 - New Piece  版权所有 闽ICP 18019448`
 
-  onChangeArticle (id: String, name:String) {
+  get getWindowHeight () {
+    return window.outerHeight
+  }
+
+  onChangeArticle (id: String, name:String, href:String) {
     this.isModal = true
-    console.log('文章id==>', id, name)
+    console.log('文章id==>', id, name, href)
+    if (href) {
+      this.src = href
+    }
   }
   onChangeModal (status:Boolean) {
     this.isModal = status
@@ -79,6 +87,12 @@ export default class main extends Vue {
   }
 
   mounted () {
+    try {
+      let div = document.getElementById('content')
+      if (div)div.style.height = window.outerHeight + 'px'
+    } catch (e) {
+      console.log(e)
+    }
     Axios.get('http://localhost:3003/')
       .then(res => {
         console.log(res)

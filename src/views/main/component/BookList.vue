@@ -20,7 +20,7 @@
       v-for="(item,i) in data"
       @click="handleClick(item)"
     >
-      {{item.name}}
+      <span class="name">{{item.name}}</span>
     </li>
   </ul>
 </template>
@@ -43,7 +43,7 @@ import Component from 'vue-class-component'
 })
 export default class bookList extends Vue {
   handleClick (item:any) {
-    this.$emit('event-change', item.id, item.name)
+    this.$emit('event-change', item.id, item.name, item.href)
   }
 }
 </script>
@@ -65,6 +65,10 @@ export default class bookList extends Vue {
     background-repeat: no-repeat;
     position: relative;
     top:0px;
+  }
+  .book-ul .book .name{
+    transform: scale(.85);
+    display: inline-block;
   }
   .book-ul .book:hover{
     margin-top: 6px;
