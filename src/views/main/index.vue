@@ -37,7 +37,7 @@ import Calendar from './component/Calendar.vue'
 import NavBox from './component/NavBox.vue'
 import Bookcase from './component/Bookcase.vue'
 import Modal from './component/Modal.vue'
-import Axios from 'axios'
+// import Axios from 'axios'
 // @Component 修饰符注明了此类为一个 Vue 组件
 
 @Component({
@@ -93,11 +93,11 @@ export default class main extends Vue {
     } catch (e) {
       console.log(e)
     }
-    Axios.get('http://localhost:3003/')
-      .then(res => {
-        console.log(res)
-        this.data = res
-      })
+    // Axios.get('http://localhost:3003/')
+    //   .then(res => {
+    //     console.log(res)
+    //     this.data = res
+    //   })
   }
 }
 </script>
