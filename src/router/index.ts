@@ -16,7 +16,7 @@ export default new Router({
   base: '/myBlog/',
   routes: [
     {
-      path: '/',
+      path: '/index',
       name: 'Main',
       component: Main
     },
