@@ -14,7 +14,7 @@ export default class Stream extends Vue {
 </script>
 <style lang="less">
   .container-box { margin: 60px; background-color: white; }
-  @-webkit-keyframes masked-animation {
+  @keyframes masked {
     0% {
       background-position: 0 0
     }
@@ -23,20 +23,20 @@ export default class Stream extends Vue {
     }
   }
 
-  p.stream {
+  .stream {
     line-height: 100px;
     text-align: center;
     color: hsla(0, 0%, 100%, .65);
     font-weight: 800;
     font-size: 52px;
-    background-image: -webkit-linear-gradient(left, #cddc39, #ff9800 25%, #cddc39 50%, #ff9800 75%, #cddc39);
+    background-image: linear-gradient(left, #cddc39, #ff9800 25%, #cddc39 50%, #ff9800 75%, #cddc39);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    -webkit-background-size: 200% 100%;
-    -webkit-animation: masked-animation .5s infinite linear;
+    background-size: 200% 100%;
+    animation: masked .5s infinite linear;
   }
 
-  p:hover {
-    -webkit-animation: masked-animation .2s infinite linear;
+  .stream:hover {
+    animation: masked .2s infinite linear;
   }
 </style>
