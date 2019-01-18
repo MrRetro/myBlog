@@ -28,7 +28,7 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
   @Component({
   })
-export default class EditDiv extends Vue {
+export default class Validate extends Vue {
   }
 </script>
 <style lang="less" scoped>

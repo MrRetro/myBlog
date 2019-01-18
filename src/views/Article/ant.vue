@@ -8,7 +8,7 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
   @Component({
   })
-export default class EditDiv extends Vue {
+export default class Ant extends Vue {
   }
 </script>
 <style scoped>

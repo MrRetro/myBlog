@@ -67,7 +67,9 @@ export default class bookList extends Vue {
     top:0px;
   }
   .book-ul .book .name{
-    transform: scale(.85);
+    writing-mode: vertical-rl;
+    letter-spacing:1px;
+    margin-top: 1px;
     display: inline-block;
   }
   .book-ul .book:hover{
