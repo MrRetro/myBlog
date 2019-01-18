@@ -10,7 +10,7 @@
         :bookWidth="18"
         :bookHeight="51"
         :bookTop="20"
-        :data="row1column1"
+        :data="data.row1column1"
         bookType="row1-column1"
         @event-change="onChange"
       />
@@ -23,7 +23,7 @@
         :bookWidth="14"
         :bookHeight="52"
         :bookTop="15"
-        :data="row1column2"
+        :data="data.row1column2"
         bookType="row1-column2"
         @event-change="onChange"
       />
@@ -36,7 +36,7 @@
         :bookWidth="14"
         :bookHeight="84"
         :bookTop="21"
-        :data="row2column1"
+        :data="data.row2column1"
         bookType="row2-column1"
         @event-change="onChange"
       />
@@ -48,7 +48,7 @@
         :height="85.5"
         :bookWidth="23"
         :bookHeight="83"
-        :data="row2column2"
+        :data="data.row2column2"
         :bookTop="21"
         bookType="row2-column2"
         @event-change="onChange"
@@ -61,7 +61,7 @@
         :height="89"
         :bookWidth="23"
         :bookHeight="86"
-        :data="row3column1"
+        :data="data.row3column1"
         :bookTop="21"
         bookType="row3-column1"
         @event-change="onChange"
@@ -74,7 +74,7 @@
         :height="89"
         :bookWidth="15"
         :bookHeight="86"
-        :data="row3column2"
+        :data="data.row3column2"
         :bookTop="21"
         bookType="row3-column2"
         @event-change="onChange"
@@ -87,7 +87,7 @@
         :height="68"
         :bookWidth="23"
         :bookHeight="65"
-        :data="row4column1"
+        :data="data.row4column1"
         :bookTop="24"
         bookType="row4-column1"
         @event-change="onChange"
@@ -100,7 +100,7 @@
         :height="68"
         :bookWidth="23"
         :bookHeight="65"
-        :data="row4column2"
+        :data="data.row4column2"
         :bookTop="24"
         bookType="row4-column2"
         @event-change="onChange"
@@ -113,7 +113,7 @@
         :height="87"
         :bookWidth="19"
         :bookHeight="84"
-        :data="row5column1"
+        :data="data.row5column1"
         :bookTop="32"
         bookType="row5-column1"
         @event-change="onChange"
@@ -126,7 +126,7 @@
         :height="85.5"
         :bookWidth="19"
         :bookHeight="84"
-        :data="row5column2"
+        :data="data.row5column2"
         :bookTop="32"
         bookType="row5-column2"
         @event-change="onChange"
@@ -139,7 +139,7 @@
         :height="87"
         :bookWidth="19"
         :bookHeight="84"
-        :data="row6column1"
+        :data="data.row6column1"
         :bookTop="32"
         bookType="row6-column1"
         @event-change="onChange"
@@ -152,7 +152,7 @@
         :height="87"
         :bookWidth="19"
         :bookHeight="84"
-        :data="row6column2"
+        :data="data.row6column2"
         :bookTop="32"
         bookType="row6-column2"
         @event-change="onChange"
@@ -166,240 +166,28 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
 import BookList from './BookList.vue'
 @Component({
-  components: { BookList }
+  components: { BookList },
+  props: {
+    data: {
+      type: Object,
+      default: {
+        row1column1: [],
+        row1column2: [],
+        row2column1: [],
+        row2column2: [],
+        row3column1: [],
+        row3column2: [],
+        row4column1: [],
+        row4column2: [],
+        row5column1: [],
+        row5column2: [],
+        row6column1: [],
+        row6column2: []
+      }
+    }
+  }
 })
 export default class bookcase extends Vue {
-  row1column1:any =[
-    {id: '10001', name: '可编辑', href: 'edit'},
-    {id: '10002', name: '重叠框', href: 'border'},
-    {id: '10003', name: '蚂蚁线', href: 'ant'},
-    {id: '10004', name: '画个圆', href: 'circle'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'}
-  ]
-  row1column2:any =[
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'}
-  ]
-  row2column1:any =[
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'}
-  ]
-  row2column2:any =[
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'}
-  ]
-  row3column1:any =[
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'}
-  ]
-  row3column2:any =[
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'},
-    {id: '10000', name: '大世界'}
-  ]
-  row4column1:any =[
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'}
-  ]
-  row4column2:any =[
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'}
-  ]
-  row5column1:any =[
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'}
-  ]
-  row5column2:any =[
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'}
-  ]
-  row6column1:any =[
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'}
-  ]
-  row6column2:any =[
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'},
-    {id: '10000', name: '世界'}
-  ]
-
   onChange (id: String, name: String, href: String) {
     this.$emit('event-change', id, name, href)
   }

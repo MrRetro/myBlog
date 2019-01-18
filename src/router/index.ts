@@ -8,6 +8,7 @@ import editDiv from '../views/Article/editDiv.vue'
 import border from '../views/Article/border.vue'
 import ant from '../views/Article/ant.vue'
 import circle from '../views/Article/circle.vue'
+import validate from '../views/Article/validate.vue'
 
 Vue.use(Router)
 
@@ -39,6 +40,11 @@ export default new Router({
       path: '/circle',
       name: 'Circle',
       component: circle
+    },
+    {
+      path: '/validate',
+      name: 'Validate',
+      component: validate
     },
     {
       path: '/speed',

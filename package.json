@@ -19,6 +19,8 @@
     "koa-bodyparser": "3",
     "koa-router": "^7.4.0",
     "koa2-cors": "^2.0.6",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
     "mysql": "^2.16.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"

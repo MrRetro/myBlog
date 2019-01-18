@@ -54,6 +54,11 @@ module.exports = {
                 "loader": "tslint-loader"
             },
             {
+              test: /\.less$/,
+              loader: "style-loader!css-loader!less-loader",
+
+            },
+            {
                 "test": /\.tsx?$/,
                 "loader": "ts-loader",
                 "exclude": /node_modules/,
