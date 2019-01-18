@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <p>我是一段流光文字！！！！！</p>
+  <div class="container-box">
+    <p class="stream">我是一段流光文字！！！！！</p>
   </div>
 </template>
 
@@ -12,8 +12,8 @@ import Component from 'vue-class-component'
 export default class Stream extends Vue {
   }
 </script>
-<style lang="less" scoped>
-  .container { margin: 60px; background-color: white; }
+<style lang="less">
+  .container-box { margin: 60px; background-color: white; }
   @-webkit-keyframes masked-animation {
     0% {
       background-position: 0 0
@@ -23,7 +23,7 @@ export default class Stream extends Vue {
     }
   }
 
-  p {
+  p.stream {
     line-height: 100px;
     text-align: center;
     color: hsla(0, 0%, 100%, .65);
