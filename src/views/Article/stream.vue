@@ -29,7 +29,7 @@ export default class Stream extends Vue {
     color: hsla(0, 0%, 100%, .65);
     font-weight: 800;
     font-size: 52px;
-    background-image: linear-gradient(left, #cddc39, #ff9800 25%, #cddc39 50%, #ff9800 75%, #cddc39);
+    background-image: -webkit-linear-gradient(left, #cddc39, #ff9800 25%, #cddc39 50%, #ff9800 75%, #cddc39);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-size: 200% 100%;
