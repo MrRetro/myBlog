@@ -23,6 +23,7 @@ export default class Vague extends Vue {
   p {
     color: transparent;
     text-shadow: #111 0 0 10px;
+    user-select: none;
   }
 }
 </style>

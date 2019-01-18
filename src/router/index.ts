@@ -13,6 +13,9 @@ import focus from '../views/Article/focus.vue'
 import wave from '../views/Article/wave.vue'
 import white from '../views/Article/white.vue'
 import vague from '../views/Article/vague.vue'
+import radio from '../views/Article/radio.vue'
+import check from '../views/Article/check.vue'
+import stream from '../views/Article/stream.vue'
 
 Vue.use(Router)
 
@@ -79,6 +82,21 @@ export default new Router({
       path: '/vague',
       name: 'Vague',
       component: vague
+    },
+    {
+      path: '/radio',
+      name: 'Radio',
+      component: radio
+    },
+    {
+      path: '/check',
+      name: 'Check',
+      component: check
+    },
+    {
+      path: '/stream',
+      name: 'Stream',
+      component: stream
     }
   ]
 })
