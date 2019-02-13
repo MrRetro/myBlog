@@ -27,9 +27,7 @@ export default class Ant extends Vue {
     border: 1px solid transparent;
     background:
       linear-gradient(white,white) padding-box,
-      repeating-linear-gradient(-45deg,
-      black 0,black 25%,white 0,white 50%
-      )0 /.6em .6em;
+      repeating-linear-gradient(-45deg,black 0,black 25%,white 0,white 50%)0 /.6em .6em;
     animation:ants 8s linear infinite;
   }
 </style>
