@@ -29,6 +29,16 @@ export default new Router({
       component: Main
     },
     {
+      path: '/list/:type',
+      name: 'Main',
+      component: Main
+    },
+    {
+      path: '/list/:type/:id',
+      name: 'Main',
+      component: Main
+    },
+    {
       path: '/edit',
       name: 'EditDiv',
       component: editDiv

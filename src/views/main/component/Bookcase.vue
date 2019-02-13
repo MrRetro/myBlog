@@ -203,6 +203,7 @@ export default class bookcase extends Vue {
   margin-left: 23.5px;
   width: 819px;
   height: 682px;
+  margin-top: 50px;
   background: url("../../../assets/book_desk.png");
 }
 </style>

@@ -7,9 +7,22 @@
       <div class="left-box" slot="left">
         <calendar />
       </div>
-      <div class="right-box" slot="right">
-        <nav-box />
-        <bookcase :data="bookData" @event-change="onChangeArticle" />
+      <div class="right-box" slot="right" >
+        <nav-box @onSelectType="onSelectType" />
+        <!--<div class="content-box">-->
+          <Detail
+            v-if="id"
+          />
+          <List
+            v-else-if="type"
+            @onDetail="onDetail"
+          />
+          <bookcase
+            v-else
+            :data="bookData"
+            @event-change="onChangeArticle"
+          />
+        <!--</div>-->
       </div>
     </container>
     <page-explain
@@ -37,6 +50,8 @@ import Calendar from './component/Calendar.vue'
 import NavBox from './component/NavBox.vue'
 import Bookcase from './component/Bookcase.vue'
 import Modal from './component/Modal.vue'
+import List from '../Article/List/index.vue'
+import Detail from '../Article/detail/index.vue'
 // import Axios from 'axios'
 // @Component 修饰符注明了此类为一个 Vue 组件
 
@@ -48,10 +63,12 @@ import Modal from './component/Modal.vue'
     Calendar,
     NavBox,
     Bookcase,
-    Modal
+    Modal,
+    List,
+    Detail
   }
 })
-export default class main extends Vue {
+export default class Main extends Vue {
   bookData: Object = {
     row1column1: [
       {id: '10001', name: '可编辑', href: 'edit'},
@@ -290,8 +307,12 @@ export default class main extends Vue {
   isModal:Boolean = false
 
   // 页尾
-  date:Date = new Date();
+  date:Date = new Date()
   pageTail: String = `Retro Mr.${this.date.getFullYear()} 厦门程序猿 - New Piece  版权所有 闽ICP 18019448`
+
+  // 当前类别 && 当前文章id
+  type:String = ''
+  id:String = ''
 
   get getWindowHeight () {
     return window.outerHeight
@@ -303,6 +324,18 @@ export default class main extends Vue {
     if (href) {
       this.src = href
     }
+  }
+
+  // 选择类别
+  onSelectType (type: String) {
+    // console.log(type)
+    this.type = type
+    this.id = ''
+  }
+  // 文章id
+  onDetail (type: String, id: String) {
+    this.type = type
+    this.id = id
   }
   onChangeModal (status:Boolean) {
     this.isModal = status
@@ -324,6 +357,14 @@ export default class main extends Vue {
     } catch (e) {
       console.log(e)
     }
+    try {
+      let {type, id} = this.$route.params
+      this.type = type
+      this.id = id
+    } catch (e) {
+      console.log('router-err==>', e)
+    }
+
     // Axios.get('http://localhost:3003/')
     //   .then(res => {
     //     console.log(res)
@@ -349,5 +390,9 @@ export default class main extends Vue {
     float: right;
     width: 866px;
     margin-left: 28px;
+  }
+  .content-box{
+    float: left;
+    width: 100%;
   }
 </style>

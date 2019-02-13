@@ -5,7 +5,7 @@
       :class="{'cur':selectIndex === i}"
       v-for="(item,i) in data"
       :key="i"
-      @click="handleSelectNav(i)"
+      @click="handleSelectNav(i,item.type)"
     >
       {{item.name}}
       <span class="border"></span>
@@ -20,7 +20,7 @@ import Component from 'vue-class-component'
     props: {
       data: {
         type: Array,
-        default: [
+        default: () => [
           {name: '✰前端', type: 'front'},
           {name: '✰学习', type: 'study'},
           {name: '✰日志', type: 'logic'},
@@ -33,8 +33,9 @@ export default class NavBox extends Vue {
     selectIndex: Number = -1
 
     // 选中导航菜单项
-    handleSelectNav (index:Number) {
+    handleSelectNav (index:Number, type:String) {
       this.selectIndex = index
+      this.$emit('onSelectType', type)
     }
   }
 </script>
@@ -46,7 +47,6 @@ export default class NavBox extends Vue {
   list-style: none;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  margin-bottom: 50px;
 }
 .nav-box .li-item{
   position: relative;

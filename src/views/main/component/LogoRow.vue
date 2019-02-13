@@ -2,7 +2,9 @@
   <div class="logo-box">
     <div class="logo-content">
       <p class="left">
-        <img class="img" src="../../../assets/logo.png" alt="">
+        <a href="/">
+          <img class="img" src="../../../assets/logo.png" alt="">
+        </a>
       </p>
     </div>
   </div>
