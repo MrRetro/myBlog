@@ -1,3 +1,10 @@
+<h1 align="center">myBlog</h1>
+<p align="center">
+  <a href="http://www.o-wu.com"><img src="https://img.shields.io/travis/rust-lang/rust.svg" alt="Vue"></a>
+  <a href="https://github.com/vuejs/vue"><img src="https://img.shields.io/badge/vue-v2.5.2-blue.svg" alt="Vue"></a>
+  <a href="https://github.com/vuejs/vue-router"><img src="https://img.shields.io/badge/vue--router-v3.0.1-blue.svg" alt="vue-router"></a>
+</p>
+<p align="center">地址:<a href="http://www.o-wu.com">http://www.o-wu.com</a></p>
 # 我的博客 (此项目主要用于学习使用请勿商用，谢谢!)
 
 作为一名程序员，一开始都得有自己的个人博客吧，那就开始撸代码吧。不，在开始撸代码之前一定要先捋清楚思路，
