@@ -16,6 +16,7 @@ import vague from '../views/Article/vague.vue'
 import radio from '../views/Article/radio.vue'
 import check from '../views/Article/check.vue'
 import stream from '../views/Article/stream.vue'
+import logForm from '../views/Log/form.vue'
 
 Vue.use(Router)
 
@@ -107,6 +108,11 @@ export default new Router({
       path: '/stream',
       name: 'Stream',
       component: stream
+    },
+    {
+      path: '/log/form',
+      name: 'LogForm',
+      component: logForm
     }
   ]
 })
