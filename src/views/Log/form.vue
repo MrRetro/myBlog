@@ -1,36 +1,46 @@
 <template>
-  <div class="app-container">
     <div>
-      <!-- 组件有两个属性 value 传入内容双向绑定 setting传入配置信息 -->
       <editor
         class="editor"
+        ref="edit"
         :value="content"
         :setting="editorSetting"
-        @input="(content)=> content = content" />
+        @input="(content)=> content = content">
+
+      </editor>
+      <p @click="submit">提交</p>
     </div>
-    <a href="#">提交{{content}}</a>
-  </div>
 </template>
+
 <script>
-import editor from '../../components/Tinymce'
+import editor from '../../components/tinymce'
 export default {
-  name: 'editor-demo',
+  name: 'logForm',
+  components: {
+    editor
+  },
+  mounted () {
+    this.$nextTick(() => {
+      console.log(this.$refs.edit)
+    })
+  },
   data: function () {
     return {
-      content: '轻松忽然',
+      content: '我是富文本编辑器的内容',
       // tinymce的配置信息 参考官方文档 https://www.tinymce.com/docs/configure/integration-and-setup/
       editorSetting: {
         height: 400
       }
     }
   },
-  components: {
-    'editor': editor
+  methods: {
+    submit () {
+      console.log(this.$refs.edit)
+    }
   }
 }
 </script>
+
 <style scoped>
-  .app-container{
-    padding: 60px;
-  }
+
 </style>
