@@ -78,19 +78,6 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@packy-tang/vue-tinymce@github:lpreterite/vue-tinymce":
-  version "0.1.5"
-  resolved "https://codeload.github.com/lpreterite/vue-tinymce/tar.gz/b232fed1ea69d570053412b4b4d819740a8707c3"
-  dependencies:
-    tinymce "^4.5.7"
-    vue "^2.2.1"
-
-"@tinymce/tinymce-vue@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-vue/-/tinymce-vue-2.0.0.tgz#41cea256f67f195ac52f71b1cc0bcbda850c86f0"
-  dependencies:
-    vue "^2.5.17"
-
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -3637,6 +3624,10 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
+jquery@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
+
 js-base64@^2.1.9:
   version "2.4.9"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.9.tgz#748911fb04f48a60c4771b375cac45a80df11c03"
@@ -6118,13 +6109,9 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
-tinymce@^4.5.7:
+tinymce@^4.7.4:
   version "4.9.3"
   resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-4.9.3.tgz#c866681484282fe9ce4694124990d94eb457c344"
-
-tinymce@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-5.0.2.tgz#72a745c1dd5982ea5ae4fe77d3618129eb4b3b1d"
 
 tmp@^0.0.33:
   version "0.0.33"
@@ -6559,10 +6546,6 @@ vue-template-compiler@^2.5.2:
 vue-template-es2015-compiler@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
-
-vue@^2.2.1, vue@^2.5.17:
-  version "2.6.8"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.8.tgz#f21cbc536bfc14f7d1d792a137bb12f69e60ea91"
 
 vue@^2.5.2:
   version "2.5.17"
