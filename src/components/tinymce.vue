@@ -1,5 +1,7 @@
 <template>
-  <textarea :id="id" :value="value"></textarea>
+  <div>
+    <textarea :id="id" :value="value"></textarea>
+  </div>
 </template>
 <script>
 import $ from 'jquery'
@@ -25,6 +27,7 @@ import 'tinymce/plugins/emoticons'
 import 'tinymce/plugins/advlist'
 import 'tinymce/plugins/autolink'
 import 'tinymce/plugins/paste'
+const OSS = require('ali-oss')
 export default {
   props: {
     value: {
@@ -82,7 +85,15 @@ export default {
   },
   data: function () {
     return {
-      id: 'editor-' + new Date().getMilliseconds()
+      id: 'editor-' + new Date().getMilliseconds(),
+
+      // 上传阿里云oss参数
+      fileId: 'file',
+      percentage: 0,
+      url: '',
+      uploadFilesName: '',
+      uploadfile: [],
+      maxLength: 1
     }
   },
   methods: {
@@ -90,34 +101,13 @@ export default {
       tinymce.activeEditor.setContent('')
     },
     addUploadImage () {
+      let self = this
       tinymce.PluginManager.add('uploadimage', function (editor) {
         function selectLocalImages () {
-          var dom = editor.dom
-          var input = $('<input type="file" id="file" name="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple="multiple">')
+          // var dom = editor.dom
+          var input = $('#' + self.fileId)
           input.on('change', function () {
-            var form = $('<form id="form"/>',
-              {
-                action: editor.settings.upload_image_url, // 设置上传图片的路由，配置在初始化时
-                style: 'display:none',
-                method: 'post',
-                enctype: 'multipart/form-data'
-              }
-            )
-            form.append(input)
-            $('body').append(form)
-
-            var data = new FormData($('#form')[0])
-            $.ajax({
-              type: 'post',
-              url: editor.settings.upload_image_url,
-              data: data,
-              processData: false,
-              contentType: false,
-              success: function (res) {
-                console.log('success------------')
-                console.log(res)
-              }
-            })
+            self.toUpload(input)
 
             // ajax提交表单
             // form.ajaxSubmit({
@@ -153,6 +143,65 @@ export default {
           onclick: selectLocalImages
         })
       })
+    },
+    toUpload (target) {
+      const vthis = this
+      // oss 基本配置
+      var client = new OSS({
+        region: 'img-o-wu.oss-cn-hangzhou.aliyuncs.com/images', // '你的购买区域',
+        endpoint: 'oss-cn-hangzhou.aliyuncs.com', // '你的购买区域',
+        accessKeyId: 'LTAIgGlU31JWT9dZ', // '你的accessKeyId',
+        accessKeySecret: 'n5HWu2lXbjqY3qtQSTymPSZyx5MaGn', // '你的accessKeySecret',
+        bucket: 'img-o-wu' // '你的bucket'
+      })
+      // 进度
+      this.percentage = 0
+      // 获取文件信息
+      const files = document.getElementById(this.fileId)
+      if (files.files) {
+        const fileLen = files.files
+        const file = files.files[0]
+        let consat = file.name
+        // 限制上传的文件为图片
+        if (consat.indexOf('.png') > -1 || consat.indexOf('.jpeg') > -1 || consat.indexOf('.jpg') > -1 || consat.indexOf('.gif') > -1) {} else {
+          // this.$Notice.warning({
+          //   title: '图片格式不正确',
+          //   desc: '图片' + file.name + ' 格式不正确，请上传对应的格式。'
+          // })
+          alert('图片格式不正确')
+          return false
+        }
+        // 限制上传文件的个数
+        const check = this.uploadfile.length < this.maxLength
+        if (!check) {
+          // this.$Notice.warning({
+          //   title: '最多只能上传' + vthis.maxLength + '张图片。'
+          // })
+          alert('最多只能上传')
+          return false
+        }
+        let name = fileLen[0].name
+        for (let i = 0; i < fileLen.length; i++) {
+          const file = fileLen[i]
+          client.put(name, file, {
+            progress: function*(percentage, cpt) {
+              vthis.percentage = percentage
+            }
+          }).then((results) => {
+            this.uploadfile.push({
+              url: results.res.requestUrls[0],
+              fileUrl: results.res.requestUrls[0],
+              name: results.name
+            })
+            alert('上传成功')
+            // this.$Message.success('上传成功')
+          }).catch((err) => {
+            console.log(err)
+          })
+        }
+      }
+      // 将
+      this.$emit('getUploadData', this.uploadfile)
     }
   },
   beforeDestroy: function () {

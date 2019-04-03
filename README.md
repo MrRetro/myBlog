@@ -27,6 +27,11 @@
   npm run dev
   nodemon index.js
 ```
+
+### 资料
+
+- [ts中如何使用vue的mixins、props等方法](https://blog.csdn.net/lizhen_software/article/details/79953464)
+
 ### 如果有什么问题或想学习什么可以在issures提哦。
 
 以上内容如果有错误，请各位指出，不要让作者在这勿人子弟，十分感谢！

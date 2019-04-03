@@ -4,20 +4,24 @@
         <p class="title">标题</p>
         <input class="input" type="text" />
       </div>
-      <editor
-        class="editor"
-        ref="edit"
-        :setting="editorSetting"
-        @onContent="onContent">
+      <!--<editor-->
+        <!--class="editor"-->
+        <!--ref="edit"-->
+        <!--:setting="editorSetting"-->
+        <!--@onContent="onContent">-->
 
-      </editor>
+      <!--</editor>-->
+      <editor
+        ref="richText"
+        v-model="content"
+        @on-upload-complete="onEditorUploadComplete" />
       <p class="btn-sub clear" @click="clear">清 空</p>
       <p class="btn-sub" @click="submit">提 交</p>
     </div>
 </template>
 
 <script>
-import editor from '../../components/tinymce'
+import editor from '../../components/TinyMce/index.vue'
 export default {
   name: 'logForm',
   components: {
@@ -46,6 +50,26 @@ export default {
     },
     onContent (txt) {
       this.content = txt
+    },
+
+    onEditorUploadComplete (res) {
+      if (res.code === 0) {
+        this.$message({
+          type: 'success',
+          message: '上传成功'
+        })
+      } else {
+        this.$message({
+          type: 'error',
+          message: res.msg
+        })
+      }
+    },
+    set () {
+      this.$refs.richText.setContent('设置内容')
+    },
+    get () {
+      console.log(this.$refs.richText.getContent())
     }
   }
 }
