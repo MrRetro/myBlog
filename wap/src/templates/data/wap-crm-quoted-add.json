@@ -1,0 +1,574 @@
+[
+  {
+    "name": "新建报价",
+    "code": "create-quoted",
+    "type": {
+      "code": 2,
+      "name": "添加表单"
+    },
+    "fields": [
+      {
+        "id": "40288a4864ff9cd101650dd997920035",
+        "createTime": "2018-08-06 14:08:08",
+        "updateTime": "2018-08-06 16:17:10",
+        "attr": "quotedPrice",
+        "name": "车辆报价(元)",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 2,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          },
+          {
+            "type": "pattern",
+            "value": "money",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "moneyInput",
+          "placeholder": "请输入金额"
+        }
+      },
+      {
+        "id": "40288a4864ff9cd101650dde1a260039",
+        "createTime": "2018-08-06 14:13:04",
+        "updateTime": "2018-09-12 10:29:56",
+        "attr": "productionTime",
+        "name": "生产日期",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 8,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择生产日期"
+        }
+      },
+      {
+        "id": "40288a4864ff9cd101650ddc4f3b0037",
+        "createTime": "2018-08-06 14:11:06",
+        "updateTime": "2018-08-24 13:40:54",
+        "attr": "procedureTracks",
+        "name": "手续时效",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 5,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          },
+          {
+            "type": "pattern",
+            "value": "number",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入天数"
+        }
+      },
+      {
+        "id": "40288a4864ff9cd101650dd871420034",
+        "createTime": "2018-08-06 14:06:53",
+        "updateTime": "2018-08-09 17:22:53",
+        "attr": "resourceLocation",
+        "name": "车源所在地",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 1,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择地址"
+        },
+        "description": "1"
+      },
+      {
+        "id": "40288a4864ff9cd101650ddef95a003a",
+        "createTime": "2018-08-06 14:14:01",
+        "updateTime": "2018-08-24 13:41:50",
+        "attr": "insuranceType",
+        "name": "保险要求",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 9,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择保险要求"
+        }
+      },
+      {
+        "id": "40288a48655b8df201656a72df4e02b8",
+        "createTime": "2018-08-24 13:40:37",
+        "updateTime": "2018-08-24 13:40:37",
+        "attr": "capitalCost",
+        "name": "资金成本",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 4,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "pattern",
+            "value": "money",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "moneyInput",
+          "placeholder": "请输入金额"
+        }
+      },
+      {
+        "id": "40288a48655b8df20165606910c00235",
+        "createTime": "2018-08-22 14:53:42",
+        "updateTime": "2018-08-24 13:45:32",
+        "attr": "remarks",
+        "name": "其他备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 12,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "5",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "200",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入备注"
+        }
+      },
+      {
+        "id": "40288a4864ff9cd101650ddf9dec003b",
+        "createTime": "2018-08-06 14:14:43",
+        "updateTime": "2018-08-24 13:46:47",
+        "attr": "invoicePrice",
+        "name": "开票金额(元)",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 9,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "pattern",
+            "value": "money",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "moneyInput",
+          "placeholder": "请输入金额"
+        }
+      },
+      {
+        "id": "40288a4864ff9cd101650ddd314e0038",
+        "createTime": "2018-08-06 14:12:04",
+        "updateTime": "2018-08-24 13:44:17",
+        "attr": "deliveryTime",
+        "name": "提车时间",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 7,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入天数"
+        }
+      },
+      {
+        "id": "40288a4864ff9cd101650de18a05003e",
+        "createTime": "2018-08-06 14:16:49",
+        "updateTime": "2018-08-24 13:45:21",
+        "attr": "resourceAreaCode",
+        "name": "车源位置",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 11,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "cityCascader",
+          "placeholder": "请选择地址"
+        }
+      },
+      {
+        "id": "40288a4864ff9cd101650de07b5f003d",
+        "createTime": "2018-08-06 14:15:40",
+        "updateTime": "2018-09-12 10:25:10",
+        "attr": "invoiceType",
+        "name": "发票类型(报价)",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 6,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择发票类型"
+        }
+      },
+      {
+        "id": "40288a4864ff9cd101650ddae8e20036",
+        "createTime": "2018-08-06 14:09:34",
+        "updateTime": "2018-08-06 16:17:26",
+        "attr": "trafficPrice",
+        "name": "运费",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 3,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          },
+          {
+            "type": "pattern",
+            "value": "money",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "moneyInput",
+          "placeholder": "请输入金额"
+        }
+      },
+      {
+        "id": "40288a4865b804a30165cb8b8d6a0257",
+        "createTime": "2018-09-12 10:10:45",
+        "updateTime": "2018-09-12 10:10:45",
+        "attr": "carSourceType",
+        "name": "车源类型",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 6,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择车源类型"
+        }
+      }
+    ]
+  }
+]

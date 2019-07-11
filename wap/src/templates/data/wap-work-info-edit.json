@@ -1,0 +1,176 @@
+[
+  {
+    "name": "编辑信息",
+    "code": "work-edit-info",
+    "type": {
+      "code": 3,
+      "name": "编辑表单"
+    },
+    "fields": [
+      {
+        "id": "40288a48667b62d001667be2d8720009",
+        "createTime": "2018-10-16 15:59:16",
+        "updateTime": "2018-10-16 17:57:45",
+        "attr": "cardNo",
+        "name": "银行卡号",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 80,
+        "filter": "true",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入银行卡号"
+        }
+      },
+      {
+        "id": "40288a48667b62d001667be1e21f0008",
+        "createTime": "2018-10-16 15:58:13",
+        "updateTime": "2018-10-16 15:58:13",
+        "attr": "cardholder",
+        "name": "持卡人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 70,
+        "filter": "true",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入持卡人姓名"
+        }
+      },
+      {
+        "id": "40288a48667b62d001667bdfdeea0007",
+        "createTime": "2018-10-16 15:56:01",
+        "updateTime": "2018-10-16 15:56:01",
+        "attr": "group",
+        "name": "关联银行卡",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 60,
+        "filter": "true",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "groupHeader"
+        }
+      },
+      {
+        "id": "40288a48667b62d001667be3bed6000a",
+        "createTime": "2018-10-16 16:00:15",
+        "updateTime": "2018-10-16 16:00:15",
+        "attr": "bankOfDeposit",
+        "name": "开户行",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 90,
+        "filter": "true",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入开户行"
+        }
+      }
+    ]
+  }
+]

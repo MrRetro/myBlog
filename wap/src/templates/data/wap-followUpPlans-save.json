@@ -1,0 +1,714 @@
+[
+  {
+    "name": "跟进计划新建",
+    "code": "create-follow-up",
+    "type": {
+      "code": 2,
+      "name": "添加表单"
+    },
+    "fields": [
+      {
+        "id": "40288a4863ed59760163f31d9dc50114",
+        "createTime": "2018-06-12 16:29:54",
+        "updateTime": "2018-06-25 17:54:22",
+        "attr": "purpose",
+        "childShowAttr": "",
+        "name": "跟进目的",
+        "valueType": {
+          "code": 1,
+          "name": "数值"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 3,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择跟进目的",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163f322b3fd0117",
+        "createTime": "2018-06-12 16:35:27",
+        "updateTime": "2018-07-25 13:45:21",
+        "attr": "remark",
+        "childShowAttr": "",
+        "name": "跟进备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 500,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 7,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "10",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "500",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入备注"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163f3203e230115",
+        "createTime": "2018-06-12 16:32:46",
+        "updateTime": "2018-06-25 17:54:40",
+        "attr": "responsibleId",
+        "childShowAttr": "",
+        "name": "负责人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 5,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "checkbox",
+          "placeholder": "请选择负责人",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163f317a17c0112",
+        "createTime": "2018-06-12 16:23:22",
+        "updateTime": "2018-06-26 10:20:00",
+        "attr": "targetId",
+        "childShowAttr": "",
+        "name": "跟进线索",
+        "valueType": {
+          "code": 1,
+          "name": "数值"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 7,
+          "name": "单选框"
+        },
+        "sort": 1,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "selClue",
+          "placeholder": "请选择跟进线索",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163f31c04420113",
+        "createTime": "2018-06-12 16:28:09",
+        "updateTime": "2018-06-25 17:54:15",
+        "attr": "plannedTime",
+        "childShowAttr": "",
+        "name": "计划时间",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 2,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "date",
+          "placeholder": "请选择计划时间",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163f32125e50116",
+        "createTime": "2018-06-12 16:33:45",
+        "updateTime": "2018-07-05 18:22:29",
+        "attr": "teamworkIds",
+        "childShowAttr": "",
+        "name": "协同人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 6,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "checkbox",
+          "placeholder": "请选择协同人"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f36a567c0008",
+        "createTime": "2018-06-12 17:53:42",
+        "updateTime": "2018-06-25 17:54:33",
+        "attr": "group",
+        "childShowAttr": "",
+        "name": "计划执行人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 4,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "groupHeader",
+          "placeholder": "",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": "分组标题"
+      }
+    ]
+  },
+  {
+    "name": "编辑跟进计划",
+    "code": "edit-follow-up",
+    "type": {
+      "code": 3,
+      "name": "编辑表单"
+    },
+    "fields": [
+      {
+        "id": "40288a4863ed59760163f31c04420113",
+        "createTime": "2018-06-12 16:28:09",
+        "updateTime": "2018-06-25 17:54:15",
+        "attr": "plannedTime",
+        "childShowAttr": "",
+        "name": "计划时间",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 2,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "date",
+          "placeholder": "请选择计划时间",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163f32125e50116",
+        "createTime": "2018-06-12 16:33:45",
+        "updateTime": "2018-07-05 18:22:29",
+        "attr": "teamworkIds",
+        "childShowAttr": "",
+        "name": "协同人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 6,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "checkbox",
+          "placeholder": "请选择协同人"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f36a567c0008",
+        "createTime": "2018-06-12 17:53:42",
+        "updateTime": "2018-06-25 17:54:33",
+        "attr": "group",
+        "childShowAttr": "",
+        "name": "计划执行人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 4,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "groupHeader",
+          "placeholder": "",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": "分组标题"
+      },
+      {
+        "id": "40288a4863ed59760163f322b3fd0117",
+        "createTime": "2018-06-12 16:35:27",
+        "updateTime": "2018-07-25 13:45:21",
+        "attr": "remark",
+        "childShowAttr": "",
+        "name": "跟进备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 500,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 7,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "10",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "500",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入备注"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163f31d9dc50114",
+        "createTime": "2018-06-12 16:29:54",
+        "updateTime": "2018-06-25 17:54:22",
+        "attr": "purpose",
+        "childShowAttr": "",
+        "name": "跟进目的",
+        "valueType": {
+          "code": 1,
+          "name": "数值"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 3,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择跟进目的",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163f3203e230115",
+        "createTime": "2018-06-12 16:32:46",
+        "updateTime": "2018-06-25 17:54:40",
+        "attr": "responsibleId",
+        "childShowAttr": "",
+        "name": "负责人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 5,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "checkbox",
+          "placeholder": "请选择负责人",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163f317a17c0112",
+        "createTime": "2018-06-12 16:23:22",
+        "updateTime": "2018-06-26 10:20:00",
+        "attr": "targetId",
+        "childShowAttr": "",
+        "name": "跟进线索",
+        "valueType": {
+          "code": 1,
+          "name": "数值"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 7,
+          "name": "单选框"
+        },
+        "sort": 1,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "selClue",
+          "placeholder": "请选择跟进线索",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      }
+    ]
+  }
+]

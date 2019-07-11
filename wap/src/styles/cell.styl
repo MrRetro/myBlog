@@ -1,0 +1,169 @@
+@import "global.styl"
+
+.cell-contain {
+  border-color #eaeaea
+  border-width 1px
+  height: auto
+  border-radius px2rem(4)
+  margin-left px2rem(14)
+  margin-right px2rem(14)
+  background-color white
+  padding-bottom px2rem(12)
+  overflow hidden
+  border-style double
+  position relative
+  margin-bottom px2rem(16)
+  .cell-icon {
+    width: px2rem(18);
+    height: px2rem(18);
+    margin-left px2rem(3.5);
+  }
+
+  .cell-item {
+    margin-top px2rem(18)
+    margin-left px2rem(18)
+    margin-right px2rem(18)
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .first {
+    height: px2rem(28)
+    color: $deepBlack
+    display flex
+    align-items center
+    margin-bottom px2rem(5)
+    medium()
+  }
+
+  .cell-time {
+    margin-top px2rem(4)
+    height: px2rem(17)
+    color $darkBlack
+    text-align left
+    font-size px2rem(12)
+  }
+
+  .cell-label-contain {
+    position relative
+    margin-left px2rem(18)
+    margin-right px2rem(18)
+    display flex
+    flex-wrap wrap
+  }
+  .btn {
+    position absolute
+    top 0
+    right 0
+    width px2rem(58)
+    height px2rem(25)
+    font-size px2rem(14)
+    regular()
+    background-color $themeColor
+    font-family: '宋体'
+    border-radius px2rem(4)
+    line-height px2rem(25)
+    color white
+  }
+
+  .cell-label {
+    width auto
+    height auto
+    padding px2rem(4) px2rem(6)
+    border-width 1px
+    border-color $themeColor
+    color $themeColor
+    border-radius px2rem(4)
+    margin-top px2rem(2)
+    margin-right px2rem(4)
+    font-size px2rem(12)
+    border-style double
+    min-width px2rem(34)
+  }
+
+  .cell-label-support {
+    border-color #EF465B
+    color #EF465B
+  }
+
+  .content {
+    margin 0 px2rem(18)
+    text-align left
+    overflow hidden
+  }
+
+  .location-text {
+    color $themeColor
+    regular()
+    margin-left px2rem(4)
+  }
+  .location-distance {
+    medium()
+  }
+  .location-contain {
+    display flex
+    align-items center
+    font-size px2ren(12)
+    line-height px2rem(17)
+  }
+
+  .line {
+    height 1px
+    margin-top px2rem(10)
+    background-color $lightGray
+    margin-bottom px2rem(10)
+  }
+
+  .second {
+    color $deepBlack
+    font-size px2rem(12)
+    height px2rem(17)
+    line-height px2rem(17)
+    margin-top px2rem(4)
+    regular()
+  }
+
+  .third {
+    color $darkBlack
+    font-size px2rem(12)
+    height px2rem(17)
+    line-height px2rem(17)
+    margin-top px2rem(4)
+    regular()
+  }
+
+  .level-icon {
+    position absolute
+    width px2rem(28)
+    height px2rem(36)
+    right px2rem(30)
+  }
+
+  .small-icon {
+    width px2rem(12)
+    height px2rem(12)
+  }
+
+  .cell-name {
+    font-size px2rem(18)
+    line-height px2rem(25)
+    medium()
+  }
+  .mix-column {
+    margin-top px2rem(13)
+    margin-bottom px2rem(13)
+    color $darkBlack
+    font-size px2rem(12)
+    height px2rem(17)
+    line-height px2rem(17)
+    margin-right px2rem(18)
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    regular()
+  }
+}
+

@@ -200,10 +200,9 @@ export default class bookcase extends Vue {
 }
 .book-desk{
   position: relative;
-  margin-left: 23.5px;
   width: 819px;
   height: 682px;
-  margin-top: 50px;
+  margin-top: 10px;
   background: url("../../../assets/book_desk.png");
 }
 </style>

@@ -1,43 +1,46 @@
 <template>
   <div class="retro">
-    <h2 id="artID" vl="20" class="h2">两个变量的值如何快速交换~假设要交换的值都为数字 </h2>
+    <h2 id="artID" vl="20" class="h2">{{detail[0].ArticleName}}</h2>
     <div class="postmetadata">
-      <small>这篇文章发布于 2018-02-26 10:38，阅读 55 次</small>
+      <small>这篇文章发布于 {{parseDate(detail[0].AddDate)}}，阅读 {{detail[0].ViewCount}} 次</small>
     </div>
-    <p class="link">by
-      <a href="#">retro</a> from
-      <a href="http://2tro.com/article_detail.aspx?TypeID=2&amp;art=20">http://2tro.com/article_detail.aspx?TypeID=2&amp;art=20</a><br> 本文可全文转载，但需得到原作者书面许可，同时保留原作者和出处，摘要引流则随意。
-    </p>
+    <!--<p class="link">by-->
+      <!--<a href="#">retro</a> from-->
+      <!--<a href="http://2tro.com/article_detail.aspx?TypeID=2&amp;art=20">http://2tro.com/article_detail.aspx?TypeID=2&amp;art=20</a><br> 本文可全文转载，但需得到原作者书面许可，同时保留原作者和出处，摘要引流则随意。-->
+    <!--</p>-->
     <!--文章内容-->
-    <div class="content-txts">
-      <h2><br></h2><h3>方法一</h3><pre>var&nbsp;a&nbsp;=&nbsp;10,&nbsp;b&nbsp;=&nbsp;11,&nbsp;temp;
-temp&nbsp;=&nbsp;a;
-a&nbsp;=&nbsp;b;
-b&nbsp;=&nbsp;temp;</pre><p><br></p><h3>方法二</h3><pre>var&nbsp;a&nbsp;=&nbsp;10,&nbsp;b&nbsp;=&nbsp;11;
-a&nbsp;=&nbsp;b&nbsp;-&nbsp;a;
-b&nbsp;=&nbsp;b&nbsp;-&nbsp;a;
-a&nbsp;=&nbsp;a&nbsp;+&nbsp;b;</pre><p><br></p><h3>方法三</h3><pre>var&nbsp;a&nbsp;=&nbsp;10,&nbsp;b&nbsp;=&nbsp;11;
-a&nbsp;=&nbsp;a&nbsp;^&nbsp;b;
-b&nbsp;=&nbsp;a&nbsp;^&nbsp;b;
-a&nbsp;=&nbsp;a&nbsp;^&nbsp;b;</pre><p><br></p>
-    </div>
+    <div class="content-txts" v-html="decodeURI(detail[0].ArticleContent)"></div>
 
-    <p class="link bottom">本文为原创文章，会经常更新知识点以及修正一些错误，因此转载请保留原出处，方便溯源，避免陈旧错误知识的误导，同时有更好的阅读体验。<br> 本文地址：
-      <a href="http://2tro.com/article_detail.aspx?TypeID=2&amp;art=20">http://2tro.com/article_detail.aspx?TypeID=2&amp;art=20</a>
-    </p>
+    <!--<p class="link bottom">本文为原创文章，会经常更新知识点以及修正一些错误，因此转载请保留原出处，方便溯源，避免陈旧错误知识的误导，同时有更好的阅读体验。<br> 本文地址：-->
+      <!--<a href="http://2tro.com/article_detail.aspx?TypeID=2&amp;art=20">http://2tro.com/article_detail.aspx?TypeID=2&amp;art=20</a>-->
+    <!--</p>-->
 
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Component from 'vue-class-component'
-@Component({
-  props: {
-    type: { type: String, default: 'front' }
-  }
-})
+import moment from 'moment'
+import {Component, Prop} from 'vue-property-decorator'
+import * as ArticleServer from '../../../api/article'
+
+@Component
 export default class Detail extends Vue {
+  @Prop()
+  id:any
+  @Prop()
+  type:any
+
+  detail:any = {}
+
+  // 时间格式转换
+  parseDate (date:any) {
+    return moment(date).format('YYYY-MM-DD HH:mm:ss')
+  }
+  async created () {
+    console.log(this.id)
+    this.detail = await ArticleServer.getArticleById({id: this.id})
+  }
 }
 </script>
 <style lang="less" scoped>
@@ -45,10 +48,11 @@ export default class Detail extends Vue {
   float: left;
   position: relative;
   z-index: 1;
-  top: 40px;
+  top: 10px;
   width: 100%;
   text-align: left;
   animation: action .5s;
+  margin-bottom: 60px;
 }
 @keyframes action
 {

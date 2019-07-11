@@ -1,5 +1,5 @@
 <template>
-  <div class="page-box">
+  <div class="page-box" :class="{cur: pageShow}">
     <!--{{data}}-->
     <page-explain :isTop="true"/>
     <logo-row />
@@ -12,8 +12,10 @@
         <!--<div class="content-box">-->
           <Detail
             v-if="id"
+            :id="id"
           />
           <List
+            ref="list"
             v-else-if="type"
             @onDetail="onDetail"
           />
@@ -50,8 +52,9 @@ import Calendar from './component/Calendar.vue'
 import NavBox from './component/NavBox.vue'
 import Bookcase from './component/Bookcase.vue'
 import Modal from './component/Modal.vue'
-import List from '../Article/List/index.vue'
+import List from '../Article/list/index.vue'
 import Detail from '../Article/detail/index.vue'
+import {enums} from '../../config/utils.js'
 // import Axios from 'axios'
 // @Component 修饰符注明了此类为一个 Vue 组件
 
@@ -69,6 +72,7 @@ import Detail from '../Article/detail/index.vue'
   }
 })
 export default class Main extends Vue {
+  pageShow: Boolean = false
   bookData: Object = {
     row1column1: [
       {id: '10001', name: '可编辑', href: 'edit'},
@@ -328,9 +332,15 @@ export default class Main extends Vue {
 
   // 选择类别
   onSelectType (type: String) {
-    // console.log(type)
+    console.log('type==>', type)
     this.type = type
     this.id = ''
+    console.log('div==>', this.$refs.list)
+    this.$nextTick(() => {
+      let list:any = this.$refs.list
+      console.log('list==>', list)
+      list && list.setList(enums[`${type}`])
+    })
   }
   // 文章id
   onDetail (type: String, id: String) {
@@ -344,7 +354,17 @@ export default class Main extends Vue {
     console.log('beforeCreate')
   }
   created () {
-    console.log('created')
+    let div = document.querySelector('.spinner')
+    div && div.classList.remove('hide')
+
+    let fn = setTimeout(() => {
+      this.pageShow = true
+      let fn2 = setTimeout(() => {
+        div && div.classList.add('hide')
+        clearTimeout(fn2)
+      }, 2000)
+      clearTimeout(fn)
+    }, 500)
   }
   beforeMount () {
     console.log('beforeMount')
@@ -379,17 +399,23 @@ export default class Main extends Vue {
     position: absolute;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    transition: opacity .5s linear;
+  }
+  .page-box.cur{
+    opacity: 1;
   }
   .left-box{
     float: left;
     width: 268px;
-    height: 820px;
-    /*background-color: wheat;*/
+    min-height: 704px;
+    margin-top: 120px;
   }
   .right-box{
     float: right;
-    width: 866px;
-    margin-left: 28px;
+    width: 826px;
+    margin-top: 10px;
+    margin-left: 68px;
   }
   .content-box{
     float: left;

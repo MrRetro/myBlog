@@ -1,8 +1,8 @@
-;
 const path = require("path");
 const utils = require("./utils");
 const config = require("../config");
 const vueLoaderConfig = require("./vue-loader.conf");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 function resolve (dir) {
 
@@ -120,5 +120,15 @@ resolve("node_modules/webpack-dev-server/client")],
         "net": "empty",
         "tls": "empty",
         "child_process": "empty"
-    }
+    },
+    "externals": {
+      'axios': 'axios',
+      'vue': 'Vue',
+      'vue-router': 'VueRouter',
+      'vuex': 'Vuex',
+      'element-ui': 'ELEMENT',
+    },
+    'plugins': [
+      new BundleAnalyzerPlugin()
+    ]
 };

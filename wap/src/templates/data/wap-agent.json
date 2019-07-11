@@ -1,0 +1,1813 @@
+[
+  {
+    "name": "修改经纪人",
+    "code": "edit-agents",
+    "type": {
+      "code": 3,
+      "name": "编辑表单"
+    },
+    "fields": [
+      {
+        "id": "40288a4863f33d6e0163f7abf2c80033",
+        "createTime": "2018-06-13 13:43:51",
+        "updateTime": "2018-07-31 16:04:30",
+        "attr": "area",
+        "childShowAttr": "",
+        "name": "经纪人地区",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 9,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "cityCascader",
+          "placeholder": "请选择地区"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c016787703caf000e",
+        "createTime": "2018-12-07 14:52:18",
+        "updateTime": "2018-12-07 15:25:41",
+        "attr": "interestedly",
+        "name": "对经纪人模式是否感兴趣",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 140,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择是否感兴趣"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163fe0872580092",
+        "createTime": "2018-06-14 19:22:36",
+        "updateTime": "2018-07-31 16:03:18",
+        "attr": "type",
+        "childShowAttr": "",
+        "name": "经纪人类型",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 6,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择类型"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f72680600029",
+        "createTime": "2018-06-13 11:18:05",
+        "updateTime": "2018-06-14 19:24:32",
+        "attr": "gender",
+        "childShowAttr": "",
+        "name": "性别",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 50,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 3,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择性别",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c0167876f5d43000d",
+        "createTime": "2018-12-07 14:51:21",
+        "updateTime": "2018-12-07 15:25:33",
+        "attr": "beingConsulted",
+        "name": "平时是否有人咨询买车",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 130,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择是否有人咨询买车"
+        }
+      },
+      {
+        "id": "40288348675e748c01678772291b0011",
+        "createTime": "2018-12-07 14:54:25",
+        "updateTime": "2018-12-07 15:25:59",
+        "attr": "valueJudgment",
+        "name": "对经纪人的价值判断",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 170,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择价值判断"
+        }
+      },
+      {
+        "id": "40288348675e748c0167876d753f000b",
+        "createTime": "2018-12-07 14:49:16",
+        "updateTime": "2018-12-07 15:25:21",
+        "attr": "storeAddress",
+        "name": "门店地址",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 100,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入门店地址"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f724c1630027",
+        "createTime": "2018-06-13 11:16:11",
+        "updateTime": "2018-12-07 22:19:30",
+        "attr": "name",
+        "childShowAttr": "",
+        "name": "微信名",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 1,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          },
+          {
+            "type": "min",
+            "value": "2",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "6",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入经纪人名称"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c01678770e147000f",
+        "createTime": "2018-12-07 14:53:01",
+        "updateTime": "2018-12-07 15:25:47",
+        "attr": "advantage",
+        "name": "认为宜买车是否有优势",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 150,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择是否有优势"
+        }
+      },
+      {
+        "id": "40288348675e748c0167877184280010",
+        "createTime": "2018-12-07 14:53:42",
+        "updateTime": "2018-12-07 15:25:53",
+        "attr": "business",
+        "name": "对卖车的了解程度(渠道,价格等",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 160,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择了解程序"
+        }
+      },
+      {
+        "id": "40288348675e748c01678911a9ab0018",
+        "createTime": "2018-12-07 22:28:15",
+        "updateTime": "2018-12-07 22:28:15",
+        "attr": "level",
+        "name": "经纪人等级",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 10,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择等级"
+        }
+      },
+      {
+        "id": "40288348675e748c016787693bf50007",
+        "createTime": "2018-12-07 14:44:40",
+        "updateTime": "2018-12-07 15:24:57",
+        "attr": "ageRange",
+        "name": "年龄段",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 60,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择年龄段"
+        }
+      },
+      {
+        "id": "40288348675e748c0167876a1f4d0008",
+        "createTime": "2018-12-07 14:45:38",
+        "updateTime": "2018-12-07 14:48:19",
+        "attr": "experience",
+        "name": "从业经验",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 70,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择从业经验"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f7276a78002a",
+        "createTime": "2018-06-13 11:19:05",
+        "updateTime": "2018-12-07 22:19:43",
+        "attr": "nickname",
+        "childShowAttr": "",
+        "name": "经纪人名称",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 4,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "2",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "6",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入备注姓名"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c0167876e8799000c",
+        "createTime": "2018-12-07 14:50:27",
+        "updateTime": "2018-12-07 15:25:27",
+        "attr": "communication",
+        "name": "是否愿意积极沟通",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 120,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择是否愿意"
+        }
+      },
+      {
+        "id": "40288348675e748c01678764420b0006",
+        "createTime": "2018-12-07 14:39:13",
+        "updateTime": "2018-12-07 15:54:54",
+        "attr": "wechatAccount",
+        "name": "微信号",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": true,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 50,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "无微信号"
+        }
+      },
+      {
+        "id": "40288348675e748c0167876b38b80009",
+        "createTime": "2018-12-07 14:46:50",
+        "updateTime": "2018-12-07 15:25:09",
+        "attr": "identity",
+        "name": "身份",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 80,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择身份"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163fe0916d70093",
+        "createTime": "2018-06-14 19:23:18",
+        "updateTime": "2018-07-31 16:04:02",
+        "attr": "responsible",
+        "childShowAttr": "",
+        "name": "经纪人负责人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 7,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "contact",
+          "placeholder": "请选择负责人"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c0167876c3536000a",
+        "createTime": "2018-12-07 14:47:54",
+        "updateTime": "2018-12-07 15:25:15",
+        "attr": "livingTime",
+        "name": "本地居住时间",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 90,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择时间"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f72584250028",
+        "createTime": "2018-06-13 11:17:01",
+        "updateTime": "2018-07-25 11:46:16",
+        "attr": "mobile",
+        "childShowAttr": "",
+        "name": "联系电话",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 50,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 2,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入联系人电话"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c0167891279130019",
+        "createTime": "2018-12-07 22:29:08",
+        "updateTime": "2018-12-07 22:29:08",
+        "attr": "address",
+        "name": "经纪人地址",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 11,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "cityCascader",
+          "placeholder": "请选择地址"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f7ac91b60034",
+        "createTime": "2018-06-13 13:44:31",
+        "updateTime": "2018-12-07 22:26:31",
+        "attr": "remark",
+        "childShowAttr": "",
+        "name": "BD备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 180,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "5",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "200",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入备注"
+        },
+        "description": ""
+      }
+    ]
+  },
+  {
+    "name": "注册经纪人",
+    "code": "create-agents",
+    "type": {
+      "code": 2,
+      "name": "添加表单"
+    },
+    "fields": [
+      {
+        "id": "40288a4863f33d6e0163f724c1630027",
+        "createTime": "2018-06-13 11:16:11",
+        "updateTime": "2018-12-07 22:19:30",
+        "attr": "name",
+        "childShowAttr": "",
+        "name": "微信名",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 1,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          },
+          {
+            "type": "min",
+            "value": "2",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "6",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入经纪人名称"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f72584250028",
+        "createTime": "2018-06-13 11:17:01",
+        "updateTime": "2018-07-25 11:46:16",
+        "attr": "mobile",
+        "childShowAttr": "",
+        "name": "联系电话",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 50,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 2,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入联系人电话"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163fe0916d70093",
+        "createTime": "2018-06-14 19:23:18",
+        "updateTime": "2018-07-31 16:04:02",
+        "attr": "responsible",
+        "childShowAttr": "",
+        "name": "经纪人负责人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 7,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "contact",
+          "placeholder": "请选择负责人"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c0167891279130019",
+        "createTime": "2018-12-07 22:29:08",
+        "updateTime": "2018-12-07 22:29:08",
+        "attr": "address",
+        "name": "经纪人地址",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 11,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "cityCascader",
+          "placeholder": "请选择地址"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f7276a78002a",
+        "createTime": "2018-06-13 11:19:05",
+        "updateTime": "2018-12-07 22:19:43",
+        "attr": "nickname",
+        "childShowAttr": "",
+        "name": "经纪人名称",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 4,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "2",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "6",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入备注姓名"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7abf2c80033",
+        "createTime": "2018-06-13 13:43:51",
+        "updateTime": "2018-07-31 16:04:30",
+        "attr": "area",
+        "childShowAttr": "",
+        "name": "经纪人地区",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 9,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "cityCascader",
+          "placeholder": "请选择地区"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c01678911a9ab0018",
+        "createTime": "2018-12-07 22:28:15",
+        "updateTime": "2018-12-07 22:28:15",
+        "attr": "level",
+        "name": "经纪人等级",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 10,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择等级"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163fe0872580092",
+        "createTime": "2018-06-14 19:22:36",
+        "updateTime": "2018-07-31 16:03:18",
+        "attr": "type",
+        "childShowAttr": "",
+        "name": "经纪人类型",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 6,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择类型"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f72680600029",
+        "createTime": "2018-06-13 11:18:05",
+        "updateTime": "2018-06-14 19:24:32",
+        "attr": "gender",
+        "childShowAttr": "",
+        "name": "性别",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 50,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 3,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择性别",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7ac91b60034",
+        "createTime": "2018-06-13 13:44:31",
+        "updateTime": "2018-12-07 22:26:31",
+        "attr": "remark",
+        "childShowAttr": "",
+        "name": "BD备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 180,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "5",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "200",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入备注"
+        },
+        "description": ""
+      }
+    ]
+  },
+  {
+    "name": "放弃经纪人",
+    "code": "del-agent",
+    "type": {
+      "code": 4,
+      "name": "其他表单"
+    },
+    "fields": [
+      {
+        "id": "40288a4863f33d6e0163fe0872580092",
+        "createTime": "2018-06-14 19:22:36",
+        "updateTime": "2018-07-31 16:03:18",
+        "attr": "type",
+        "childShowAttr": "",
+        "name": "经纪人类型",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 6,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择类型"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7276a78002a",
+        "createTime": "2018-06-13 11:19:05",
+        "updateTime": "2018-12-07 22:19:43",
+        "attr": "nickname",
+        "childShowAttr": "",
+        "name": "经纪人名称",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 4,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "2",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "6",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入备注姓名"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f72680600029",
+        "createTime": "2018-06-13 11:18:05",
+        "updateTime": "2018-06-14 19:24:32",
+        "attr": "gender",
+        "childShowAttr": "",
+        "name": "性别",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 50,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 3,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择性别",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f72584250028",
+        "createTime": "2018-06-13 11:17:01",
+        "updateTime": "2018-07-25 11:46:16",
+        "attr": "mobile",
+        "childShowAttr": "",
+        "name": "联系电话",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 50,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 2,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入联系人电话"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7abf2c80033",
+        "createTime": "2018-06-13 13:43:51",
+        "updateTime": "2018-07-31 16:04:30",
+        "attr": "area",
+        "childShowAttr": "",
+        "name": "经纪人地区",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 9,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "cityCascader",
+          "placeholder": "请选择地区"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f724c1630027",
+        "createTime": "2018-06-13 11:16:11",
+        "updateTime": "2018-12-07 22:19:30",
+        "attr": "name",
+        "childShowAttr": "",
+        "name": "微信名",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 1,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          },
+          {
+            "type": "min",
+            "value": "2",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "6",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入经纪人名称"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7ac91b60034",
+        "createTime": "2018-06-13 13:44:31",
+        "updateTime": "2018-12-07 22:26:31",
+        "attr": "remark",
+        "childShowAttr": "",
+        "name": "BD备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 180,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "5",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "200",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入备注"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163fe0916d70093",
+        "createTime": "2018-06-14 19:23:18",
+        "updateTime": "2018-07-31 16:04:02",
+        "attr": "responsible",
+        "childShowAttr": "",
+        "name": "经纪人负责人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 7,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "contact",
+          "placeholder": "请选择负责人"
+        },
+        "description": ""
+      }
+    ]
+  }
+]

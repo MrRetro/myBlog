@@ -1,0 +1,143 @@
+@import "theme.styl"
+
+px2rem(px) {
+  return unit(px * 320 / 375 / 20, 'rem');
+}
+
+//风格
+$themeColor = #348EED;
+//深黑(深字体颜色)
+$deepBlack = #31363B;
+//浅黑(浅字体颜色)
+$darkBlack = #8D8D8D;
+//深灰(input文本placeholder颜色)
+$deepGray = #B0B0B0;
+//线条颜色
+$lightGray = #F2F2F2;
+
+$red = #EF465B;
+$yellow = #EFD703;
+$orange = #FBA839;
+
+$headerHeight = px2rem(15)
+$modelBg = #0006
+//font-body-normal px2rem(15)
+semibold()
+  font-family "PingFang SC"
+  font-weight 600
+
+medium()
+  font-family "PingFang SC"
+  font-weight 500
+
+regular()
+  font-family "PingFang SC"
+  font-weight 400
+
+.scroll-box {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
+
+.app-init {
+  position absolute
+  left 0
+  right 0
+  bottom 0
+  top 0
+}
+
+.flex-center {
+  display flex;
+  align-items center;
+}
+
+.full-parent {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-go-leave {
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)
+}
+
+.slide-go-enter-active, .slide-go-leave-active, .slide-back-enter-active, .slide-back-leave-active {
+  -webkit-transition: transform 0.2s cubic-bezier(.55, 0, .1, 1)
+  transition: transform 0.2s cubic-bezier(.55, 0, .1, 1)
+}
+
+.slide-go-leave-to {
+  -webkit-transform: translate3d(-100%, 0, 0)
+  transform: translate3d(-100%, 0, 0)
+}
+
+.slide-go-enter {
+  -webkit-transform: translate3d(100%, 0, 0)
+  transform: translate3d(100%, 0, 0)
+}
+
+.slide-go-enter-to {
+  -webkit-transform: translate3d(0%, 0, 0)
+  transform: translate3d(0%, 0, 0)
+}
+
+.slide-back-leave {
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)
+}
+
+.slide-back-leave-to {
+  -webkit-transform: translate3d(100%, 0, 0)
+  transform: translate3d(100%, 0, 0)
+}
+
+.slide-back-enter {
+  -webkit-transform: translate3d(-100%, 0, 0)
+  transform: translate3d(-100%, 0, 0)
+}
+
+.slide-back-enter-to {
+  -webkit-transform: translate3d(0%, 0, 0)
+  transform: translate3d(0%, 0, 0)
+}
+
+.fade-enter-active {
+  transition: all .5s
+}
+
+.fade-leave-active {
+  transition: all .5s
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.md-radio-content {
+  font-size px2rem(14)
+}
+
+input::-webkit-input-placeholder {
+  color: $deepGray
+}
+
+.box-shadow {
+  box-shadow: px2rem(0) px2rem(2) px2rem(6) rgba(0, 0, 0, .16);
+}
+
+.touch-highlight {
+
+}
+
+.touch-opacity:active {
+  opacity 0.7
+}
+
+// 单行超出省略
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+

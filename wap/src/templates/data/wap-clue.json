@@ -1,0 +1,1500 @@
+[
+  {
+    "name": "线索新建",
+    "code": "create-clue",
+    "type": {
+      "code": 2,
+      "name": "添加表单"
+    },
+    "fields": [
+      {
+        "id": "40288a4863f33d6e0163f751c6f8002b",
+        "createTime": "2018-06-13 12:05:21",
+        "updateTime": "2018-06-13 17:27:47",
+        "attr": "group",
+        "childShowAttr": "",
+        "name": "车型信息",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 20,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "groupHeader",
+          "placeholder": "",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f70a7282001f",
+        "createTime": "2018-06-13 10:47:27",
+        "updateTime": "2018-07-25 10:27:21",
+        "attr": "group",
+        "childShowAttr": "",
+        "name": "客户信息",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 10,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "groupHeader"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7a7114f0031",
+        "createTime": "2018-06-13 13:38:31",
+        "updateTime": "2018-11-16 15:24:03",
+        "attr": "responsibleId",
+        "childShowAttr": "",
+        "name": "线索负责人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 33,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "employeeSelectWithDccAndSales",
+          "placeholder": "请选择线索负责人"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c01678807f9920015",
+        "createTime": "2018-12-07 17:38:03",
+        "updateTime": "2018-12-08 19:19:45",
+        "attr": "quotation",
+        "name": "是否有4S店报价单",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 80,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "switch",
+          "placeholder": "请选择是否有报价单"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f84cf4330041",
+        "createTime": "2018-06-13 16:39:42",
+        "updateTime": "2018-11-30 13:47:19",
+        "attr": "belongStoreId",
+        "childShowAttr": "",
+        "name": "所属地面店",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 34,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "selStore",
+          "placeholder": "请选择地面店铺"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7a40de6002e",
+        "createTime": "2018-06-13 13:35:13",
+        "updateTime": "2018-06-13 17:28:13",
+        "attr": "group",
+        "childShowAttr": "",
+        "name": "线索信息",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 30,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "groupHeader",
+          "placeholder": "",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c01678807151b0014",
+        "createTime": "2018-12-07 17:37:04",
+        "updateTime": "2018-12-08 19:19:27",
+        "attr": "to4s",
+        "name": "是否去过4S店",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 70,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "switch",
+          "placeholder": "请选择是否去过4s店"
+        }
+      },
+      {
+        "id": "40288348675e748c01678808b1bd0016",
+        "createTime": "2018-12-07 17:38:50",
+        "updateTime": "2018-12-08 19:20:12",
+        "attr": "qualifications",
+        "name": "购车资格",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 90,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "switch",
+          "placeholder": "请选择是否有购车资格"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f7bf69b10036",
+        "createTime": "2018-06-13 14:05:06",
+        "updateTime": "2018-06-14 18:03:49",
+        "attr": "vehicleModelId",
+        "childShowAttr": "",
+        "name": "车型信息",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 21,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "carModel",
+          "placeholder": "请选择车型信息",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7a5134b002f",
+        "createTime": "2018-06-13 13:36:20",
+        "updateTime": "2018-08-02 18:01:40",
+        "attr": "intentionGrade",
+        "childShowAttr": "",
+        "name": "意向等级",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 31,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择意向等级"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c0167880639f60013",
+        "createTime": "2018-12-07 17:36:08",
+        "updateTime": "2018-12-08 19:33:07",
+        "attr": "compareNum",
+        "name": "对比车型数量",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 50,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择对比车的数量"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f7531d4e002d",
+        "createTime": "2018-06-13 12:06:49",
+        "updateTime": "2018-08-31 15:44:32",
+        "attr": "interior",
+        "childShowAttr": "",
+        "name": "内饰",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 50,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 23,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "innerSelect",
+          "placeholder": "请选择内饰"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7a6446d0030",
+        "createTime": "2018-06-13 13:37:38",
+        "updateTime": "2018-12-07 17:13:55",
+        "attr": "shoppingWay",
+        "childShowAttr": "",
+        "name": "购买方案",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 32,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择购买方式"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c0167880536330012",
+        "createTime": "2018-12-07 17:35:02",
+        "updateTime": "2018-12-08 19:32:51",
+        "attr": "shoppingTime",
+        "name": "预计购车时间",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 40,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "radio",
+          "placeholder": "请选择预计购车时间"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f752788f002c",
+        "createTime": "2018-06-13 12:06:07",
+        "updateTime": "2018-08-08 14:06:46",
+        "attr": "appearance",
+        "childShowAttr": "",
+        "name": "外观",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 50,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 22,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "outerSelect",
+          "placeholder": "请选择外观"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7a864510032",
+        "createTime": "2018-06-13 13:39:58",
+        "updateTime": "2018-12-07 17:33:59",
+        "attr": "remark",
+        "childShowAttr": "",
+        "name": "线索备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 100,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入备注"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a48648c47a701648d70019f0009",
+        "createTime": "2018-07-12 15:41:25",
+        "updateTime": "2018-07-12 15:41:25",
+        "attr": "customerId",
+        "name": "客户id",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 11,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "input"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f84c41480040",
+        "createTime": "2018-06-13 16:38:57",
+        "updateTime": "2018-10-15 21:00:22",
+        "attr": "belongPlaceId",
+        "childShowAttr": "",
+        "name": "线索归属地",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 35,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "cityCascader",
+          "placeholder": "请选择线索地区"
+        },
+        "description": ""
+      }
+    ]
+  },
+  {
+    "name": "编辑线索",
+    "code": "edit-clue",
+    "type": {
+      "code": 3,
+      "name": "编辑表单"
+    },
+    "fields": [
+      {
+        "id": "40288348675e748c0167880639f60013",
+        "createTime": "2018-12-07 17:36:08",
+        "updateTime": "2018-12-08 19:33:07",
+        "attr": "compareNum",
+        "name": "对比车型数量",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 50,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择对比车的数量"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f752788f002c",
+        "createTime": "2018-06-13 12:06:07",
+        "updateTime": "2018-08-08 14:06:46",
+        "attr": "appearance",
+        "childShowAttr": "",
+        "name": "外观",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 50,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 22,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "outerSelect",
+          "placeholder": "请选择外观"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7bf69b10036",
+        "createTime": "2018-06-13 14:05:06",
+        "updateTime": "2018-06-14 18:03:49",
+        "attr": "vehicleModelId",
+        "childShowAttr": "",
+        "name": "车型信息",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 21,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "carModel",
+          "placeholder": "请选择车型信息",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7a7114f0031",
+        "createTime": "2018-06-13 13:38:31",
+        "updateTime": "2018-11-16 15:24:03",
+        "attr": "responsibleId",
+        "childShowAttr": "",
+        "name": "线索负责人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 33,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "employeeSelectWithDccAndSales",
+          "placeholder": "请选择线索负责人"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7531d4e002d",
+        "createTime": "2018-06-13 12:06:49",
+        "updateTime": "2018-08-31 15:44:32",
+        "attr": "interior",
+        "childShowAttr": "",
+        "name": "内饰",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 50,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 23,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "innerSelect",
+          "placeholder": "请选择内饰"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7a40de6002e",
+        "createTime": "2018-06-13 13:35:13",
+        "updateTime": "2018-06-13 17:28:13",
+        "attr": "group",
+        "childShowAttr": "",
+        "name": "线索信息",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 30,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "groupHeader",
+          "placeholder": "",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c01678807f9920015",
+        "createTime": "2018-12-07 17:38:03",
+        "updateTime": "2018-12-08 19:19:45",
+        "attr": "quotation",
+        "name": "是否有4S店报价单",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 80,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "switch",
+          "placeholder": "请选择是否有报价单"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f7a6446d0030",
+        "createTime": "2018-06-13 13:37:38",
+        "updateTime": "2018-12-07 17:13:55",
+        "attr": "shoppingWay",
+        "childShowAttr": "",
+        "name": "购买方案",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 32,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择购买方式"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f84cf4330041",
+        "createTime": "2018-06-13 16:39:42",
+        "updateTime": "2018-11-30 13:47:19",
+        "attr": "belongStoreId",
+        "childShowAttr": "",
+        "name": "所属地面店",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 34,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "selStore",
+          "placeholder": "请选择地面店铺"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a48648c47a701648d70019f0009",
+        "createTime": "2018-07-12 15:41:25",
+        "updateTime": "2018-07-12 15:41:25",
+        "attr": "customerId",
+        "name": "客户id",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 11,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "input"
+        }
+      },
+      {
+        "id": "40288348675e748c01678808b1bd0016",
+        "createTime": "2018-12-07 17:38:50",
+        "updateTime": "2018-12-08 19:20:12",
+        "attr": "qualifications",
+        "name": "购车资格",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 90,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "switch",
+          "placeholder": "请选择是否有购车资格"
+        }
+      },
+      {
+        "id": "40288348675e748c01678807151b0014",
+        "createTime": "2018-12-07 17:37:04",
+        "updateTime": "2018-12-08 19:19:27",
+        "attr": "to4s",
+        "name": "是否去过4S店",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 70,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "switch",
+          "placeholder": "请选择是否去过4s店"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f7a5134b002f",
+        "createTime": "2018-06-13 13:36:20",
+        "updateTime": "2018-08-02 18:01:40",
+        "attr": "intentionGrade",
+        "childShowAttr": "",
+        "name": "意向等级",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 31,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择意向等级"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f84c41480040",
+        "createTime": "2018-06-13 16:38:57",
+        "updateTime": "2018-10-15 21:00:22",
+        "attr": "belongPlaceId",
+        "childShowAttr": "",
+        "name": "线索归属地",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 35,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "cityCascader",
+          "placeholder": "请选择线索地区"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f7a864510032",
+        "createTime": "2018-06-13 13:39:58",
+        "updateTime": "2018-12-07 17:33:59",
+        "attr": "remark",
+        "childShowAttr": "",
+        "name": "线索备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 100,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入备注"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288348675e748c0167880536330012",
+        "createTime": "2018-12-07 17:35:02",
+        "updateTime": "2018-12-08 19:32:51",
+        "attr": "shoppingTime",
+        "name": "预计购车时间",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 40,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "radio",
+          "placeholder": "请选择预计购车时间"
+        }
+      },
+      {
+        "id": "40288a4863f33d6e0163f751c6f8002b",
+        "createTime": "2018-06-13 12:05:21",
+        "updateTime": "2018-06-13 17:27:47",
+        "attr": "group",
+        "childShowAttr": "",
+        "name": "车型信息",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 20,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "groupHeader",
+          "placeholder": "",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863f33d6e0163f70a7282001f",
+        "createTime": "2018-06-13 10:47:27",
+        "updateTime": "2018-07-25 10:27:21",
+        "attr": "group",
+        "childShowAttr": "",
+        "name": "客户信息",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 10,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "groupHeader"
+        },
+        "description": ""
+      }
+    ]
+  }
+]

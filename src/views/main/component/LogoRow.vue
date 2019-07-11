@@ -23,8 +23,9 @@ export default class LogoRow extends Vue {
 
 <style scoped>
   .logo-box{
+    float: left;
     width: 100%;
-    height: 100px;
+    height: 0px;
     margin-top: 30px;
   }
   .logo-content{
@@ -41,9 +42,23 @@ export default class LogoRow extends Vue {
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     transition: all .2s linear;
+    position: relative;
+    z-index: 100;
+    animation: animate 10s infinite;
+  }
+  @keyframes animate {
+    0%{
+      transform: skew(30deg);
+    }
+    50%{
+      transform: skew(-30deg);
+    }
+    100%{
+      transform: skew(30deg);
+    }
   }
   .logo-content .left .img{
-    margin-top: 16px;
+    margin-top: -15px;
   }
   .small{
     transform: scale(0.2);

@@ -1,40 +1,84 @@
 <template>
-    <div class="form-box">
-      <div class="title-box">
-        <p class="title">标题</p>
-        <input class="input" type="text" />
-      </div>
-      <!--<editor-->
-        <!--class="editor"-->
-        <!--ref="edit"-->
-        <!--:setting="editorSetting"-->
-        <!--@onContent="onContent">-->
-
-      <!--</editor>-->
+    <div class="form-box" :class="{cur:pageShow}">
+      <el-form ref="form" :rules="rules" :model="form" label-width="52px">
+        <el-form-item label="标题" size="medium" prop="title">
+          <el-input ref="title" v-model="form.title" placeholder="请输入标题"></el-input>
+        </el-form-item>
+        <el-form-item label="类型" size="medium" prop="type">
+          <el-select style="width: 100%;" v-model="form.type">
+            <el-option v-for="(item, i) in options.type" :key="'type' + i" :label="item.label" :value="item.value"></el-option>
+          </el-select>
+        </el-form-item>
+      </el-form>
       <editor
-        ref="richText"
+        ref="edit"
         v-model="content"
         @on-upload-complete="onEditorUploadComplete" />
-      <p class="btn-sub clear" @click="clear">清 空</p>
-      <p class="btn-sub" @click="submit">提 交</p>
+      <p class="btn-box">
+        <el-button type="info" plain @click="clear">清 空</el-button>
+        <el-button type="primary" @click="submit">{{id?'编 辑':'提 交'}}</el-button>
+      </p>
     </div>
 </template>
 
 <script>
 import editor from '../../components/TinyMce/index.vue'
+import * as ArticleServer from '../../api/article'
+window.tinymce.baseURL = '/static/tinymce' // 需要调用tinymce的组件中得加入这，不然会报错
 export default {
   name: 'logForm',
   components: {
     editor
   },
   mounted () {
-    this.$nextTick(() => {
-      console.log(this.$refs.edit)
+    let div = document.querySelector('.spinner')
+    div && div.classList.remove('hide')
+
+    this.$nextTick(async () => {
+      console.log('retro0415', this.$route)
+      let id = this.$route.params.id
+      this.id = id
+      id && ArticleServer.getArticleById({id}).then(res => {
+        const detail = res
+        this.form.title = detail[0].ArticleName
+        this.form.type = detail[0].TypeID
+        this.content = decodeURI(detail[0].ArticleContent)
+      })
+      let fn = setTimeout(() => {
+        this.pageShow = true
+        let fn2 = setTimeout(() => {
+          div && div.classList.add('hide')
+          clearTimeout(fn2)
+        }, 2000)
+        clearTimeout(fn)
+      }, 500)
     })
+  },
+  activated () {
+    console.log('retro', this.$route)
   },
   data: function () {
     return {
+      pageShow: false,
+      id: '', // 如果id存在则编辑,否则新建
+      form: {
+        title: '',
+        type: 1
+      },
       content: '',
+      rules: {
+        title: [
+          { required: true, message: '请输入标题', trigger: 'blur' }
+        ]
+      },
+      options: {
+        type: [
+          { label: '前端', value: 1 },
+          { label: '学习', value: 2 },
+          { label: '日志', value: 3 },
+          { label: '娱乐', value: 4 }
+        ]
+      },
       // tinymce的配置信息 参考官方文档 https://www.tinymce.com/docs/configure/integration-and-setup/
       editorSetting: {
         height: 600
@@ -43,7 +87,45 @@ export default {
   },
   methods: {
     submit () {
-      console.log(this.content)
+      if (!this.form.title) {
+        this.$message.error('请输入标题！')
+        this.$refs.title.focus()
+        return false
+      }
+      if (!this.content) {
+        this.$message.error('请输入内容！')
+        this.$refs.edit.focus()
+        return false
+      }
+
+      this.$refs['form'].validate(valid => {
+        if (valid) {
+          if (this.id) {
+            ArticleServer.editArticle({
+              ArticleID: this.id,
+              TypeID: this.form.type,
+              ArticleName: this.form.title,
+              ArticleContent: encodeURI(this.content)
+            }).then(res => {
+              this.$message.success('编辑成功')
+              this.form.title = ''
+              this.$router.push({name: 'Main'})
+              this.$refs.edit.clear()
+            })
+          } else {
+            ArticleServer.addArticle({
+              ArticleName: this.form.title,
+              TypeID: this.form.type,
+              ArticleContent: encodeURI(this.content)
+            }).then(res => {
+              this.$message.success('添加成功')
+              this.form.title = ''
+              this.$router.push({name: 'Main'})
+              this.$refs.edit.clear()
+            })
+          }
+        }
+      })
     },
     clear () {
       this.$refs.edit.clear()
@@ -53,16 +135,11 @@ export default {
     },
 
     onEditorUploadComplete (res) {
-      if (res.code === 0) {
-        this.$message({
-          type: 'success',
-          message: '上传成功'
-        })
+      console.log('success==>', res)
+      if (res) {
+        console.log('上传成功==>', res)
       } else {
-        this.$message({
-          type: 'error',
-          message: res.msg
-        })
+        console.log('上传失败==>', res)
       }
     },
     set () {
@@ -99,29 +176,13 @@ export default {
   }
   .form-box{
     padding: 60px;
+    opacity: 0;
+    transition: opacity .2s linear;
   }
-  .btn-sub{
-    display: inline-block;
-    font-size: 16px;
-    padding: 10px 30px;
-    background-color: #348eed;
-    border-radius: 4px;
-    cursor: pointer;
-    color: white;
-    margin-top: 20px;
-    transition: opacity .3s linear;
+  .form-box.cur{
     opacity: 1;
   }
-  .btn-sub:hover{
-    opacity: .8;
-  }
-  .btn-sub:active{
-    position: relative;
-    left:1px;
-    top:1px;
-  }
-  .btn-sub.clear{
-    margin-right: 20px;
-    background-color: gainsboro;
+  .btn-box{
+    margin-top: 20px;
   }
 </style>

@@ -1,0 +1,217 @@
+[
+  {
+    "name": "完成提车",
+    "code": "crm/order/finish/add",
+    "type": {
+      "code": 2,
+      "name": "添加表单"
+    },
+    "fields": [
+      {
+        "id": "40288a4866fbd5ae0166fc47496c0003",
+        "createTime": "2018-11-10 14:20:22",
+        "updateTime": "2018-11-10 14:20:22",
+        "attr": "arrivalsAddress",
+        "name": "到达城市",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 20,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input"
+        }
+      },
+      {
+        "id": "40288a4866fbd5ae0166fc49bca70005",
+        "createTime": "2018-11-10 14:23:02",
+        "updateTime": "2018-11-10 14:23:02",
+        "attr": "carInspectionPhoto",
+        "name": "验车照片",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 40,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "fileUpload",
+          "placeholder": "请上传照片"
+        }
+      },
+      {
+        "id": "40288a4866fbd5ae0166fc4895520004",
+        "createTime": "2018-11-10 14:21:47",
+        "updateTime": "2018-11-10 14:21:47",
+        "attr": "vin",
+        "name": "车架号",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 30,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入车架号"
+        }
+      },
+      {
+        "id": "40288a4866fbd5ae0166fc4579ab0001",
+        "createTime": "2018-11-10 14:18:23",
+        "updateTime": "2018-11-10 14:18:23",
+        "attr": "group",
+        "name": "提车资料",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 1,
+        "filter": "false",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "groupHeader"
+        }
+      },
+      {
+        "id": "40288a4866fbd5ae0166fc4694ff0002",
+        "createTime": "2018-11-10 14:19:36",
+        "updateTime": "2018-11-10 14:19:36",
+        "attr": "departureAddress",
+        "name": "发车城市",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": true,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": false,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 10,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input"
+        }
+      }
+    ]
+  }
+]

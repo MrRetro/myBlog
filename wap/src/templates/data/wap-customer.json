@@ -1,0 +1,1184 @@
+[
+  {
+    "name": "全部客户新建",
+    "code": "create-customers",
+    "type": {
+      "code": 2,
+      "name": "添加表单"
+    },
+    "fields": [
+      {
+        "id": "40288a4863ed59760163ee56046700c8",
+        "createTime": "2018-06-11 18:13:24",
+        "updateTime": "2018-06-15 15:29:45",
+        "attr": "mobile",
+        "childShowAttr": "",
+        "name": "客户电话",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 2,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          },
+          {
+            "type": "pattern",
+            "value": "mobile",
+            "message": "手机格式不正确",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "tel",
+          "placeholder": "请输入客户电话",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4864920ac101649278bf340004",
+        "createTime": "2018-07-13 15:09:04",
+        "updateTime": "2018-07-13 15:09:04",
+        "attr": "responsible",
+        "name": "客户负责人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 3,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "contact",
+          "placeholder": "请选择联系人"
+        }
+      },
+      {
+        "id": "40288a4863ed59760163ee6d504500cc",
+        "createTime": "2018-06-11 18:38:51",
+        "updateTime": "2018-07-05 12:06:49",
+        "attr": "origin",
+        "childShowAttr": "",
+        "name": "客户来源",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 4,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请选择客户来源",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择客户来源"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163ee6ebbfe00ce",
+        "createTime": "2018-06-11 18:40:24",
+        "updateTime": "2018-07-05 12:07:19",
+        "attr": "level",
+        "childShowAttr": "",
+        "name": "客户等级",
+        "valueType": {
+          "code": 1,
+          "name": "数值"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 6,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请选择客户等级",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "rate",
+          "placeholder": "请选择客户等级",
+          "options": "customerLevel"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4864a1dc5a0164a7a23af50008",
+        "createTime": "2018-07-17 17:46:24",
+        "updateTime": "2018-07-25 20:24:22",
+        "attr": "nickname",
+        "name": "姓名备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 11,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "2",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "6",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入姓名备注"
+        }
+      },
+      {
+        "id": "40288a4863ed59760163ee6bb5e200cb",
+        "createTime": "2018-06-11 18:37:06",
+        "updateTime": "2018-07-25 20:25:04",
+        "attr": "remark",
+        "childShowAttr": "",
+        "name": "客户备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 500,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 12,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "5",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "100",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入备注"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163ee70556000d0",
+        "createTime": "2018-06-11 18:42:09",
+        "updateTime": "2018-07-13 11:51:05",
+        "attr": "area",
+        "childShowAttr": "",
+        "name": "客户地区",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 500,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 7,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "cityCascader",
+          "placeholder": "请选择地区"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4864d4efb70164d557093100eb",
+        "createTime": "2018-07-26 14:46:48",
+        "updateTime": "2018-07-26 17:01:54",
+        "attr": "name",
+        "name": "客户名称",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 1,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "pattern",
+            "value": "empty",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "required",
+            "value": "true",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "min",
+            "value": "2",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "6",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入客户名称"
+        }
+      },
+      {
+        "id": "40288a4863ed59760163ee6f50a300cf",
+        "createTime": "2018-06-11 18:41:02",
+        "updateTime": "2018-07-11 11:55:12",
+        "attr": "industry",
+        "childShowAttr": "",
+        "name": "客户行业",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 200,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 8,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入客户行业"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163ee71014a00d1",
+        "createTime": "2018-06-11 18:42:53",
+        "updateTime": "2018-06-12 14:27:18",
+        "attr": "address",
+        "childShowAttr": "",
+        "name": "客户地址",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 300,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 10,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入地址",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163ee6af18d00ca",
+        "createTime": "2018-06-11 18:36:16",
+        "updateTime": "2018-06-12 14:26:18",
+        "attr": "gender",
+        "childShowAttr": "",
+        "name": "客户性别",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 3,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请选择性别",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择性别",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163ee6dfedf00cd",
+        "createTime": "2018-06-11 18:39:36",
+        "updateTime": "2018-07-05 12:07:09",
+        "attr": "type",
+        "childShowAttr": "",
+        "name": "客户类型",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 5,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请选择客户类型",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择客户类型"
+        },
+        "description": ""
+      }
+    ]
+  },
+  {
+    "name": "全部客户编辑",
+    "code": "edit-customers",
+    "type": {
+      "code": 3,
+      "name": "编辑表单"
+    },
+    "fields": [
+      {
+        "id": "40288a4863ed59760163ee6af18d00ca",
+        "createTime": "2018-06-11 18:36:16",
+        "updateTime": "2018-06-12 14:26:18",
+        "attr": "gender",
+        "childShowAttr": "",
+        "name": "客户性别",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 3,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请选择性别",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择性别",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163ee6f50a300cf",
+        "createTime": "2018-06-11 18:41:02",
+        "updateTime": "2018-07-11 11:55:12",
+        "attr": "industry",
+        "childShowAttr": "",
+        "name": "客户行业",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 200,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 8,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入客户行业"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163ee6d504500cc",
+        "createTime": "2018-06-11 18:38:51",
+        "updateTime": "2018-07-05 12:06:49",
+        "attr": "origin",
+        "childShowAttr": "",
+        "name": "客户来源",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 4,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请选择客户来源",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择客户来源"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163ee71014a00d1",
+        "createTime": "2018-06-11 18:42:53",
+        "updateTime": "2018-06-12 14:27:18",
+        "attr": "address",
+        "childShowAttr": "",
+        "name": "客户地址",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 300,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 10,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入地址",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163ee6bb5e200cb",
+        "createTime": "2018-06-11 18:37:06",
+        "updateTime": "2018-07-25 20:25:04",
+        "attr": "remark",
+        "childShowAttr": "",
+        "name": "客户备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 500,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 12,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "5",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "100",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "textarea",
+          "placeholder": "请输入备注"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163ee70556000d0",
+        "createTime": "2018-06-11 18:42:09",
+        "updateTime": "2018-07-13 11:51:05",
+        "attr": "area",
+        "childShowAttr": "",
+        "name": "客户地区",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 500,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 7,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": "true",
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "cityCascader",
+          "placeholder": "请选择地区"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4864a1dc5a0164a7a23af50008",
+        "createTime": "2018-07-17 17:46:24",
+        "updateTime": "2018-07-25 20:24:22",
+        "attr": "nickname",
+        "name": "姓名备注",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 11,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "min",
+            "value": "2",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "6",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入姓名备注"
+        }
+      },
+      {
+        "id": "40288a4863ed59760163ee56046700c8",
+        "createTime": "2018-06-11 18:13:24",
+        "updateTime": "2018-06-15 15:29:45",
+        "attr": "mobile",
+        "childShowAttr": "",
+        "name": "客户电话",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 2,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          },
+          {
+            "type": "pattern",
+            "value": "mobile",
+            "message": "手机格式不正确",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "tel",
+          "placeholder": "请输入客户电话",
+          "resource": "",
+          "options": "",
+          "query": "",
+          "change": "",
+          "beforeOption": ""
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4864920ac101649278bf340004",
+        "createTime": "2018-07-13 15:09:04",
+        "updateTime": "2018-07-13 15:09:04",
+        "attr": "responsible",
+        "name": "客户负责人",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 3,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "此项为必填项",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "contact",
+          "placeholder": "请选择联系人"
+        }
+      },
+      {
+        "id": "40288a4863ed59760163ee6dfedf00cd",
+        "createTime": "2018-06-11 18:39:36",
+        "updateTime": "2018-07-05 12:07:09",
+        "attr": "type",
+        "childShowAttr": "",
+        "name": "客户类型",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 5,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请选择客户类型",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "select",
+          "placeholder": "请选择客户类型"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4863ed59760163ee6ebbfe00ce",
+        "createTime": "2018-06-11 18:40:24",
+        "updateTime": "2018-07-05 12:07:19",
+        "attr": "level",
+        "childShowAttr": "",
+        "name": "客户等级",
+        "valueType": {
+          "code": 1,
+          "name": "数值"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 6,
+        "filter": "false",
+        "filterType": "",
+        "rulesObj": [
+          {
+            "type": "required",
+            "value": true,
+            "message": "请选择客户等级",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "rate",
+          "placeholder": "请选择客户等级",
+          "options": "customerLevel"
+        },
+        "description": ""
+      },
+      {
+        "id": "40288a4864d4efb70164d557093100eb",
+        "createTime": "2018-07-26 14:46:48",
+        "updateTime": "2018-07-26 17:01:54",
+        "attr": "name",
+        "name": "客户名称",
+        "valueType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "isHide": false,
+        "isReadonly": false,
+        "isSort": false,
+        "titleFixedType": "NONE",
+        "columnWidth": 120,
+        "columnAlign": "LEFT",
+        "isCustom": false,
+        "isEnable": true,
+        "defaultValue": "",
+        "dataSource": "",
+        "dataSourceType": {
+          "code": 0,
+          "name": "无数据源"
+        },
+        "tableShowType": {
+          "code": 0,
+          "name": "文本"
+        },
+        "sort": 1,
+        "filter": "false",
+        "rulesObj": [
+          {
+            "type": "pattern",
+            "value": "empty",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "required",
+            "value": "true",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "min",
+            "value": "2",
+            "message": "请输入内容",
+            "trigger": "blur"
+          },
+          {
+            "type": "max",
+            "value": "6",
+            "message": "请输入内容",
+            "trigger": "blur"
+          }
+        ],
+        "configsObj": {
+          "type": "input",
+          "placeholder": "请输入客户名称"
+        }
+      }
+    ]
+  }
+]

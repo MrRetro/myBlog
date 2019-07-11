@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import { ossUpload, uploadImg } from '@/api/public'
+import { ossUpload, uploadImg } from '../../api/public'
 import '../../../static/tinymce/tinymce'
 export default {
   name: 'mceeditor',
@@ -42,12 +42,15 @@ export default {
       Id: Id,
       myEditor: null,
       DefaultConfig: {
+        branding: false, // 隐藏右下角logo
         // GLOBAL
         language: 'zh_CN', // 汉化
         height: 500, // 默认高度
         theme: 'modern', // 默认主题
         menubar: true,
-        toolbar: `styleselect | fontselect | formatselect | fontsizeselect | forecolor backcolor | bold italic underline strikethrough | insertfile link image | table | alignleft aligncenter alignright alignjustify | outdent indent | numlist bullist | preview removeformat  hr | paste code | undo redo | fullscreen `, // 需要的工具栏
+        toolbar: [
+          'undo redo fontselect fontsizeselect removeformat imagetools paste uploadimage',
+          'bold italic underline strikethrough backcolor forecolor alignleft aligncenter alignright alignjustify bullist numlist outdent indent blockquote link unlink image code print preview media fullpage fullscreen emoticons'], // 需要的工具栏
         plugins: `
             paste
             importcss
@@ -90,7 +93,7 @@ export default {
         nonbreaking_force_tab: false,
         paste_auto_cleanup_on_paste: false,
         // CONFIG: Font
-        fontsize_formats: '10px 11px 12px 14px 16px 18px 20px 24px',
+        fontsize_formats: '12px 14px 16px 18px 20px 24px',
         // CONFIG: StyleSelect
         style_formats: [
           {
@@ -161,13 +164,16 @@ export default {
         file_picker_types: 'file',
         // 上传文件
         file_picker_callback: function (callback, value, meta) {
+          console.log(1)
           let fileUploadControl = document.getElementById('photoFileUpload')
           fileUploadControl.click()
           fileUploadControl.onchange = function () {
             if (fileUploadControl.files.length > 0) {
               let localFile = fileUploadControl.files[0]
               ossUpload({ type: localFile.type }).then(res => {
-                uploadImg(res.data, localFile).then(res => {
+                console.log(2)
+                uploadImg(res, localFile).then(res => {
+                  console.log(3)
                   if (res.code === 0) {
                     callback(res.data.name, { text: localFile.name })
                     self.$emit('on-upload-complete', res) // 抛出 'on-upload-complete' 钩子
@@ -184,6 +190,7 @@ export default {
         },
         // 图片上传
         images_upload_handler: function (blobInfo, success, failure) {
+          console.log('result==>', blobInfo, success, failure)
           if (blobInfo.blob().size > self.maxSize) {
             failure('文件体积过大')
           }
@@ -193,9 +200,11 @@ export default {
             failure('图片格式错误')
           }
 
-          function uploadPic () {
-            ossUpload({ type: 'image/png' }).then(res => {
-              uploadImg(res.data, blobInfo.blob()).then(res => {
+          async function uploadPic () {
+            ossUpload().then(res => {
+              console.log(7, res)
+              uploadImg(res, blobInfo.blob()).then(res => {
+                console.log(5, res)
                 if (res.code === 0) {
                   success(res.data.name)
                   self.$emit('on-upload-complete', res) // 抛出 'on-upload-complete' 钩子
@@ -227,6 +236,13 @@ export default {
           )
         }
       })
+    },
+    // 清空富文本框数据
+    clear () {
+      this.myEditor.setContent('')
+    },
+    focus () {
+      this.myEditor.focus()
     }
   },
   mounted () {

@@ -1,31 +1,33 @@
 // 通用型api
-import request from './request'
+// import request from './request'
 import axios from 'axios'
+const {config} = require('../config') // 配置文件
 
 // 文件上传 api 地址
-// http://{{host}}/api/v1.0/upload/ossUpload 预上传地址
-// https://arbitration-web.oss-cn-hangzhou.aliyuncs.com 上传文件
-export const ossUpload = (params) => {
-  return request('get', '/api/v1.0/upload/ossUpload', params)
+export const ossUpload = () => {
+  return axios.get(`${config.apiUrl}/auth/ali`, {})
 }
 
 export const uploadImg = (data, file) => {
-  let ossConfig = data.param
-  let uploadUrl = data.url
+  console.log('retro04102014==>', data)
+  let ossConfig = data.data
+  let uploadUrl = data.data.url
   let formData = new FormData()
   formData.append('OSSAccessKeyId', ossConfig.OSSAccessKeyId)
-  formData.append('Signature', ossConfig.Signature)
-  formData.append('callback', ossConfig.callback)
+  formData.append('Signature', ossConfig.signature)
   formData.append('key', ossConfig.key)
   formData.append('policy', ossConfig.policy)
-  formData.append('Content-Type', ossConfig['Content-Type'])
+  formData.append('Content-Type', file.type)
   formData.append('file', file)
   return axios.post(uploadUrl, formData).then(res => {
-    if (res.data.code === 0) {
-      return Promise.resolve(res.data)
+    console.log('结果是==>', res)
+    let res1 = {
+      code: 0,
+      data: {name: data.data.imgUrl},
+      msg: ''
     }
-    return Promise.reject(res.data)
+    return Promise.resolve(res1)
   }).catch(err => {
-    return Promise.reject(err)
+    return err
   })
 }

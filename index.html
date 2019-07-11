@@ -3,16 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Keywords" content="Retro.Mr的个人主页 » 哦屋 www.o-wu.com">
+    <meta name="author" content="Retro.Mr">
+    <meta name="Description" content="Retro.Mr的个人主页 » 哦屋 www.o-wu.com">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui@2.7.2/lib/theme-chalk/index.css">
     <title>Retro.Mr的个人主页 » 哦屋</title>
     <style>
     *{
       margin: 0;
       padding: 0;
     }
+    html {
+      -ms-overflow-style:none;
+      overflow:-moz-scrollbars-none;
+    }
+    html::-webkit-scrollbar{width:0px}
+    .spinner{margin: 100px auto;width: 100px;height: 60px;text-align: center;font-size: 10px;position: fixed;z-index: -1;margin-left: 50%;left: -50px;top:80px;}
+    .spinner.hide{display: none;}
+    .spinner > div{background-color: #67CF22;height: 100%;width: 6px;display: inline-block;-webkit-animation: stretchdelay 1.2s infinite ease-in-out;animation: stretchdelay 1.2s infinite ease-in-out;margin: 0px 2px;}
+    .spinner .rect2{-webkit-animation-delay: -1.1s;animation-delay: -1.1s;}
+    .spinner .rect3{-webkit-animation-delay: -1.0s;animation-delay: -1.0s;}
+    .spinner .rect4{-webkit-animation-delay: -0.9s;animation-delay: -0.9s;}
+    .spinner .rect5{-webkit-animation-delay: -0.8s;animation-delay: -0.8s;}
+    @-webkit-keyframes stretchdelay{0%, 40%, 100%{-webkit-transform: scaleY(0.4)}
+      20%{-webkit-transform: scaleY(1.0)}}
+    @keyframes stretchdelay{0%, 40%, 100%{transform: scaleY(0.4);-webkit-transform: scaleY(0.4);}
+      20%{transform: scaleY(1.0);-webkit-transform: scaleY(1.0);}}
     </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+    </div>
+
+    <div class="spinner hide">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
     <!-- built files will be auto injected -->
+
+    <!--cdn加速-->
+
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <!--<script src="https://cdn.bootcss.com/vue/2.5.17/vue.js"></script>-->
+
+    <!-- 生产环境版本，优化了尺寸和速度 -->
+    <script src="https://cdn.bootcss.com/vue/2.5.17/vue.min.js"></script>
+    <script>!window.Vue && document.write(unescape('%3Cscript src="/static/cdn/vue.min.js"%3E%3C/script%3E'))</script>
+
+    <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+    <script>!window.axios && document.write(unescape('%3Cscript src="/static/cdn/axios.min.js"%3E%3C/script%3E'))</script>
+    <script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js"></script>
+    <script>!window.VueRouter && document.write(unescape('%3Cscript src="/static/cdn/vue-router.min.js"%3E%3C/script%3E'))</script>
+    <script src="https://cdn.bootcss.com/vuex/3.0.1/vuex.min.js"></script>
+    <script>!window.Vuex && document.write(unescape('%3Cscript src="/static/cdn/vuex.min.js"%3E%3C/script%3E'))</script>
+    <script src="https://cdn.bootcss.com/vue-i18n/7.6.0/vue-i18n.min.js"></script>
+    <script>!window.Vue && document.write(unescape('%3Cscript src="/static/cdn/vue-i18n.min.js"%3E%3C/script%3E'))</script>
+    <script src="https://unpkg.com/element-ui@2.7.2/lib/index.js"></script>
+    <script>!window.ELEMENT && document.write(unescape('%3Cscript src="/static/cdn/element.min.js"%3E%3C/script%3E'))</script>
+    <script src="https://unpkg.com/element-ui/lib/umd/locale/zh-CN.js"></script>
+    <script>!window.ELEMENT && document.write(unescape('%3Cscript src="/static/cdn/element-zh.min.js"%3E%3C/script%3E'))</script>
+    <script>
+      ELEMENT.locale(ELEMENT.lang.zhCN)
+    </script>
   </body>
 </html>

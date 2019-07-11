@@ -26,8 +26,6 @@ export default class container extends Vue {
     background-color: white;
   }
   .container-boder{
-    margin-top: 50px;
     margin-left: 30px;
-    margin-bottom: 80px;
   }
 </style>
