@@ -1,11 +1,13 @@
 const Koa  = require('koa')
 const app = new Koa()
-const Router = require('koa-router');
-const router = new Router();
-const OSS = require('ali-oss');
+const Router = require('koa-router')
+const router = new Router()
+const OSS = require('ali-oss')
+const PassThrough = require('stream').PassThrough;
 const GlobalConfig = require('./src/config')
+const getWxQrImg = require('./getwxqr')
 
-const bodyParser = require('koa-bodyparser');
+const bodyParser = require('koa-bodyparser')
 app.use(bodyParser());
 
 const ArticleApi = require( './db/Article')
@@ -59,6 +61,21 @@ auth.get('/ali',async(ctx)=>{
 });
 // 二级路由
 router.use('/auth',auth.routes(),auth.allowedMethods());
+
+//子路由 wx
+let wx = new Router();
+wx.post('/qr_img',async(ctx)=>{
+  console.log('请求微信小程序码',ctx.request.body);
+  const params = ctx.request.body;
+  // 获取微信小程序码
+  const stream = await getWxQrImg.getWxaCodeUnlimit({
+    page: 'pages/wifi/wifi',
+    scene: params.ssid+'&'+params.pass
+  })
+  ctx.body = stream.pipe(PassThrough())
+});
+// 二级路由
+router.use('/wx',wx.routes(),wx.allowedMethods());
 
 // 操作表
 app.use(require('./routers/article.js').routes())
