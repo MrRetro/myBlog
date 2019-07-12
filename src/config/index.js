@@ -3,7 +3,7 @@
  * Time: 11/4/19
  */
 
-const ENV = 'dev'
+const ENV = 'prod'
 
 // dev
 const dev = {
@@ -13,8 +13,8 @@ const dev = {
 
 // prod
 const prod = {
-  apiUrl: 'http://47.96.98.104:3008', // 请求接口地址
-  whileUrl: 'http://47.96.98.104' // 跨域白名单地址
+  apiUrl: 'https://api.o-wu.com', // 请求接口地址
+  whileUrl: 'http://api.o-wu.com' // 跨域白名单地址
 }
 
 const Conf = {
