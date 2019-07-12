@@ -4,10 +4,10 @@ const config = {
   // 数据库配置
   database: {
     DATABASE: 'myBlog',
-    USERNAME: 'user',
-    PASSWORD: 'retro123',
+    USERNAME: 'root',
+    PASSWORD: 'root',
     PORT: '3306',
-    HOST: 'localhost'
+    HOST: '47.96.98.104'
   }
 }
 
