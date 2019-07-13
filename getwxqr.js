@@ -23,7 +23,7 @@ module.exports = {
     // 图片文件名使用page和scene等数据生成Hash
     // 以避免重复生成内容相同的小程序码
     const fileName = sha1(page + scene)
-    const filePath = path.join(__dirname, `./upload/qr/qrcode.png`)
+    const filePath = path.join(__dirname, `./upload/qr/${fileName}.png`)
 
     let readable
 
@@ -46,7 +46,7 @@ module.exports = {
     }
 
     // 返回该小程序码图片的文件流
-    return readable
+    return `/qr/${fileName}.png`;
   }
 
 }

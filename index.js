@@ -73,7 +73,7 @@ wx.post('/qr_img',async(ctx)=>{
     scene: params.ssid+'|'+params.pass
   })
   console.log('请求微信参数',params.ssid,params.pass);
-  ctx.body = stream.pipe(PassThrough())
+  ctx.body = stream;//stream.pipe(PassThrough())
 });
 // 二级路由
 router.use('/wx',wx.routes(),wx.allowedMethods());
