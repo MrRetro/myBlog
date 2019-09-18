@@ -22,16 +22,18 @@ module.exports = {
   async getWxaCodeUnlimit({ page, scene }) {
     // 图片文件名使用page和scene等数据生成Hash
     // 以避免重复生成内容相同的小程序码
-    const fileName = sha1(page + scene)
+    const fileName = scene + sha1(page + scene)
     const filePath = path.join(__dirname, `./upload/qr/${fileName}.png`)
 
     let readable
 
     try {
+      console.log('正常流程==>')
       // 检测该名字的小程序码图片文件是否已存在
       await bluebird.promisify(fs.access)(filePath, fs.constants.R_OK);
       readable = fs.createReadStream(filePath)
     } catch (e) {
+      console.log('异常流程==>',e)
       // 小程序码不存在，则创建一张新的
       const token = await wxAppAPI.ensureAccessToken()
       const response = await axios({
@@ -47,6 +49,7 @@ module.exports = {
 
     // 返回该小程序码图片的文件流
     return `/qr/${fileName}.png`;
+    // return readable;
   }
 
 }

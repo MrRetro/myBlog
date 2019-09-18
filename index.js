@@ -70,7 +70,7 @@ wx.post('/qr_img',async(ctx)=>{
   // 获取微信小程序码
   const stream = await getWxQrImg.getWxaCodeUnlimit({
     page: 'pages/wifi/wifi',
-    scene: params.ssid+'|'+params.pass
+    scene: params.ssid+'&'+params.pass
   })
   console.log('请求微信参数',params.ssid,params.pass);
   ctx.body = stream;//stream.pipe(PassThrough())

@@ -20,8 +20,19 @@
       overflow:-moz-scrollbars-none;
     }
     html::-webkit-scrollbar{width:0px}
-    .spinner{margin: 100px auto;width: 100px;height: 60px;text-align: center;font-size: 10px;position: fixed;z-index: -1;margin-left: 50%;left: -50px;top:80px;}
-    .spinner.hide{display: none;}
+    .spinner{margin: 100px auto;width: 100px;height: 60px;text-align: center;font-size: 10px;position: fixed;z-index: 10;margin-left: 50%;left: -50px;top:80px;transition-property: opacity;transition-duration: .2s;opacity: 1}
+    .spinner.hide{
+      z-index: 10;
+      animation: isNone 1s linear 0s 1 normal forwards;
+    }
+    .spinner.isNone{display: none;}
+    @keyframes isNone {
+      0%{ opacity: 1 }
+      25%{ opacity: 0.75 }
+      50%{ opacity: 0.5 }
+      75%{ opacity: 0.25 }
+      100%{ opacity: 0;}
+    }
     .spinner > div{background-color: #67CF22;height: 100%;width: 6px;display: inline-block;-webkit-animation: stretchdelay 1.2s infinite ease-in-out;animation: stretchdelay 1.2s infinite ease-in-out;margin: 0px 2px;}
     .spinner .rect2{-webkit-animation-delay: -1.1s;animation-delay: -1.1s;}
     .spinner .rect3{-webkit-animation-delay: -1.0s;animation-delay: -1.0s;}
@@ -37,7 +48,7 @@
     <div id="app">
     </div>
 
-    <div class="spinner hide">
+    <div id="spinner" class="spinner">
       <div class="rect1"></div>
       <div class="rect2"></div>
       <div class="rect3"></div>

@@ -7,8 +7,19 @@
       overflow:-moz-scrollbars-none;
     }
     html::-webkit-scrollbar{width:0px}
-    .spinner{margin: 100px auto;width: 100px;height: 60px;text-align: center;font-size: 10px;position: fixed;z-index: -1;margin-left: 50%;left: -50px;top:80px;}
-    .spinner.hide{display: none;}
+    .spinner{margin: 100px auto;width: 100px;height: 60px;text-align: center;font-size: 10px;position: fixed;z-index: 10;margin-left: 50%;left: -50px;top:80px;transition-property: opacity;transition-duration: .2s;opacity: 1}
+    .spinner.hide{
+      z-index: 10;
+      animation: isNone 1s linear 0s 1 normal forwards;
+    }
+    .spinner.isNone{display: none;}
+    @keyframes isNone {
+      0%{ opacity: 1 }
+      25%{ opacity: 0.75 }
+      50%{ opacity: 0.5 }
+      75%{ opacity: 0.25 }
+      100%{ opacity: 0;}
+    }
     .spinner > div{background-color: #67CF22;height: 100%;width: 6px;display: inline-block;-webkit-animation: stretchdelay 1.2s infinite ease-in-out;animation: stretchdelay 1.2s infinite ease-in-out;margin: 0px 2px;}
     .spinner .rect2{-webkit-animation-delay: -1.1s;animation-delay: -1.1s;}
     .spinner .rect3{-webkit-animation-delay: -1.0s;animation-delay: -1.0s;}
@@ -17,4 +28,4 @@
     @-webkit-keyframes stretchdelay{0%, 40%, 100%{-webkit-transform: scaleY(0.4)}
       20%{-webkit-transform: scaleY(1.0)}}
     @keyframes stretchdelay{0%, 40%, 100%{transform: scaleY(0.4);-webkit-transform: scaleY(0.4);}
-      20%{transform: scaleY(1.0);-webkit-transform: scaleY(1.0);}}</style><link rel="shortcut icon" href=/dist/favicon.ico><link href=/dist/static/css/app.b428ba9e86a7fca99e233387d7f45c06.css rel=stylesheet></head><body><div id=app></div><div class="spinner hide"><div class=rect1></div><div class=rect2></div><div class=rect3></div><div class=rect4></div><div class=rect5></div></div><script src=https://cdn.bootcss.com/vue/2.5.17/vue.min.js></script><script>!window.Vue && document.write(unescape('%3Cscript src="/static/cdn/vue.min.js"%3E%3C/script%3E'))</script><script src=https://cdn.bootcss.com/axios/0.18.0/axios.min.js></script><script>!window.axios && document.write(unescape('%3Cscript src="/static/cdn/axios.min.js"%3E%3C/script%3E'))</script><script src=https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js></script><script>!window.VueRouter && document.write(unescape('%3Cscript src="/static/cdn/vue-router.min.js"%3E%3C/script%3E'))</script><script src=https://cdn.bootcss.com/vuex/3.0.1/vuex.min.js></script><script>!window.Vuex && document.write(unescape('%3Cscript src="/static/cdn/vuex.min.js"%3E%3C/script%3E'))</script><script src=https://cdn.bootcss.com/vue-i18n/7.6.0/vue-i18n.min.js></script><script>!window.Vue && document.write(unescape('%3Cscript src="/static/cdn/vue-i18n.min.js"%3E%3C/script%3E'))</script><script src=https://unpkg.com/element-ui@2.7.2/lib/index.js></script><script>!window.ELEMENT && document.write(unescape('%3Cscript src="/static/cdn/element.min.js"%3E%3C/script%3E'))</script><script src=https://unpkg.com/element-ui/lib/umd/locale/zh-CN.js></script><script>!window.ELEMENT && document.write(unescape('%3Cscript src="/static/cdn/element-zh.min.js"%3E%3C/script%3E'))</script><script>ELEMENT.locale(ELEMENT.lang.zhCN)</script><script type=text/javascript src=/dist/static/js/manifest.a83dcf2f60008186c0b1.js></script><script type=text/javascript src=/dist/static/js/vendor.553063b1ee9705eae678.js></script><script type=text/javascript src=/dist/static/js/app.67e0ce83a37a31146c48.js></script></body></html>
+      20%{transform: scaleY(1.0);-webkit-transform: scaleY(1.0);}}</style><link rel="shortcut icon" href=/dist/favicon.ico><link href=/dist/static/css/app.a3fd666e343f43411c7fb49e48c87f07.css rel=stylesheet></head><body><div id=app></div><div id=spinner class=spinner><div class=rect1></div><div class=rect2></div><div class=rect3></div><div class=rect4></div><div class=rect5></div></div><script src=https://cdn.bootcss.com/vue/2.5.17/vue.min.js></script><script>!window.Vue && document.write(unescape('%3Cscript src="/static/cdn/vue.min.js"%3E%3C/script%3E'))</script><script src=https://cdn.bootcss.com/axios/0.18.0/axios.min.js></script><script>!window.axios && document.write(unescape('%3Cscript src="/static/cdn/axios.min.js"%3E%3C/script%3E'))</script><script src=https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js></script><script>!window.VueRouter && document.write(unescape('%3Cscript src="/static/cdn/vue-router.min.js"%3E%3C/script%3E'))</script><script src=https://cdn.bootcss.com/vuex/3.0.1/vuex.min.js></script><script>!window.Vuex && document.write(unescape('%3Cscript src="/static/cdn/vuex.min.js"%3E%3C/script%3E'))</script><script src=https://cdn.bootcss.com/vue-i18n/7.6.0/vue-i18n.min.js></script><script>!window.Vue && document.write(unescape('%3Cscript src="/static/cdn/vue-i18n.min.js"%3E%3C/script%3E'))</script><script src=https://unpkg.com/element-ui@2.7.2/lib/index.js></script><script>!window.ELEMENT && document.write(unescape('%3Cscript src="/static/cdn/element.min.js"%3E%3C/script%3E'))</script><script src=https://unpkg.com/element-ui/lib/umd/locale/zh-CN.js></script><script>!window.ELEMENT && document.write(unescape('%3Cscript src="/static/cdn/element-zh.min.js"%3E%3C/script%3E'))</script><script>ELEMENT.locale(ELEMENT.lang.zhCN)</script><script type=text/javascript src=/dist/static/js/manifest.77f0f6a0457a659a8759.js></script><script type=text/javascript src=/dist/static/js/vendor.7e57e43dc32b7cfd30ff.js></script><script type=text/javascript src=/dist/static/js/app.10665ecaf6321a721020.js></script></body></html>

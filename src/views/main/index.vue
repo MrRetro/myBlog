@@ -354,17 +354,10 @@ export default class Main extends Vue {
     console.log('beforeCreate')
   }
   created () {
-    let div = document.querySelector('.spinner')
-    div && div.classList.remove('hide')
-
-    let fn = setTimeout(() => {
+    // 隐藏加载
+    this.$nextTick(() => {
       this.pageShow = true
-      let fn2 = setTimeout(() => {
-        div && div.classList.add('hide')
-        clearTimeout(fn2)
-      }, 2000)
-      clearTimeout(fn)
-    }, 500)
+    })
   }
   beforeMount () {
     console.log('beforeMount')
